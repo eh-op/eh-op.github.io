@@ -266,4 +266,20 @@ pre > code {
 .sharing-buttons {
 	width: 100%;
 }
+
+.collapsible {
+  color: #0074d9;
+  text-decoration: none;
+}
+
+.collapsible:hover {
+    cursor: pointer;
+}
+
+.collapsible:hover, .collapsible:focus {
+  text-decoration: underline;
+}
+
+p {
+    text-align: justify;
 }
