@@ -279,7 +279,3 @@ pre > code {
 .collapsible:hover, .collapsible:focus {
   text-decoration: underline;
 }
-
-p {
-    text-align: justify;
-}
