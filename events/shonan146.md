@@ -175,5 +175,5 @@ The full schedule is to be announced.
 
 #### Friday, March 29, 2019
 
-- 07:30 -- 09:00: Breakfast
+- 07:30 -- 09:00: Checkout and breakfast
 - 12:00 -- 13:30: Lunch
