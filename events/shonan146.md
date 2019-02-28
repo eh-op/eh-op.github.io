@@ -165,7 +165,7 @@ The full schedule is to be announced.
 
 - 07:30 -- 09:00: Breakfast
 - 12:00 -- 13:30: Lunch
-- 13:30 -- 20:45: Excursion and Dinner (TBC)
+- 13:30 -- 20:45: Excursion and dinner (TBC)
 
 #### Thursday, March 28, 2019
 
