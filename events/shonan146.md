@@ -7,6 +7,10 @@ layout: default
 
 Jump to [Schedule](#schedule) -- [Organisers](#organisers) -- [Participants](#participants).
 
+Access to the Shonan Village
+
+See [Shonan Village Home Page](https://www.shonan-village.co.jp/eng/access/)
+
 ### Overview
 
 Algebraic effects and effect handlers are becoming an increasingly
@@ -151,28 +155,40 @@ The full schedule is to be announced.
 #### Monday, March 25, 2019
 
 - 07:30 -- 09:00: Breakfast
+- 09:00 -- 09:15: Welcome, Overview, Administrative issues
+- 09:15 -- 10:30: Self-introductions
+- 10:30 -- 11:00: Tea break
+- 11:00 -- 11:50: Self-introductions
 - 12:00 -- 13:30: Lunch
+
+- 15:15 -- 15:45: Tea break
 - 18:00 -- 19:30: Dinner
 
 #### Tuesday, March 26, 2019
 
 - 07:30 -- 09:00: Breakfast
+- 10:30 -- 11:00: Tea break
 - 12:00 -- 13:30: Lunch
+- 15:15 -- 15:45: Tea break
 - 18:00 -- 19:30: Dinner
 
 #### Wednesday, March 27, 2019
 
 - 07:30 -- 09:00: Breakfast
+- 10:30 -- 11:00: Tea break
 - 12:00 -- 13:30: Lunch
 - 13:30 -- 20:45: Excursion and dinner (TBC)
 
 #### Thursday, March 28, 2019
 
 - 07:30 -- 09:00: Breakfast
+- 10:30 -- 11:00: Tea break
 - 12:00 -- 13:30: Lunch
+- 15:15 -- 15:45: Tea break
 - 18:00 -- 19:30: Dinner
 
 #### Friday, March 29, 2019
 
 - 07:30 -- 09:00: Checkout and breakfast
+- 10:30 -- 11:00: Tea break
 - 12:00 -- 13:30: Lunch
