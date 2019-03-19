@@ -150,7 +150,7 @@ The full schedule is to be announced.
 #### Sunday, March 24, 2019
 
 - 15:00 -- : Check-in
-- 19:00 -- 21:00: Welcome banquet
+- 19:00 -- 21:00: Welcome reception
 
 #### Monday, March 25, 2019
 
