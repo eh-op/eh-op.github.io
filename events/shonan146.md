@@ -114,7 +114,6 @@ that there will be an abundance of interest in attending this meeting.
 - [Robert Atkey](https://bentnib.org/), University of Strathclyde, UK
 - [Oliver Bračevac](https://www.stg.tu-darmstadt.de/staff/oliver_bracevac_menu/oliver_bracevac.en.jsp), TU Darmstadt, Germany
 - [Edwin Brady](https://edwinb.wordpress.com/), University of St Andrews, UK
-- [Nick Benton](https://research.fb.com/people/benton-nick/), Facebook, UK
 - [Youyou Cong](https://sites.google.com/site/youyoucong212/), Ochanomizu University, Japan
 - [Stephen Dolan](http://stedolan.net/), University of Cambridge, UK
 - [Jeremy Gibbons](http://www.cs.ox.ac.uk/jeremy.gibbons/), University of Oxford, UK
