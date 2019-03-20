@@ -137,7 +137,6 @@ that there will be an abundance of interest in attending this meeting.
 - [Andreas Rossberg](https://people.mpi-sws.org/~rossberg/), Dfinity Foundation, Germany
 - [Tom Schrijvers](https://people.cs.kuleuven.be/~tom.schrijvers/), KU Leuven, Belgium
 - [Philipp Schuster](http://ps.informatik.uni-tuebingen.de/team/schuster/), Universität Tübingen, Germany
-- [KC Sivaramakrishnan](http://kcsrk.info/), IIT Madras, India
 - [Leo White](http://www.lpw25.net/), Jane Street, UK
 - [Jeremy Yallop](https://www.cl.cam.ac.uk/~jdy22/), University of Cambridge, UK
 - [Yizhou Zhang](http://www.cs.cornell.edu/~yizhou/), Cornell University, USA
