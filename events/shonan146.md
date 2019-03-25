@@ -143,7 +143,7 @@ that there will be an abundance of interest in attending this meeting.
 
 ### Schedule
 
-The full schedule is [here](https://docs.google.com/spreadsheets/d/10yb2FxemDHKLCNeeJO_wG_GFrfNSyzDkKDl1_W8bMwQ/edit?usp=sharing).
+The (dynamically changing) full schedule is [here](https://docs.google.com/spreadsheets/d/10yb2FxemDHKLCNeeJO_wG_GFrfNSyzDkKDl1_W8bMwQ/edit?usp=sharing).
 
 #### Sunday, March 24, 2019
 
