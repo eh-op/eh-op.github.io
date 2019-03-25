@@ -157,9 +157,11 @@ The full schedule is to be announced.
 - 09:15 -- 10:30: Self-introductions
 - 10:30 -- 11:00: Tea break
 - 11:00 -- 11:20: Self-introductions
-- 11:20 -- 12:00: Daan Leijen: Tutorial on typed algebraic effects
+- 11:20 -- 12:00: Daan Leijen: Tutorial on pragmatics of effect handlers
 - 12:00 -- 13:30: Lunch
-- 15:15 -- 15:45: Tea break
+- 13:30 -- 14:30: Gordon Plotkin: Tutorial on foundations of algebraic effects
+- 14:30 -- 15:00: Tea break
+- 15:00 -- 16:30: Talks
 - 18:00 -- 19:30: Dinner
 
 #### Tuesday, March 26, 2019
@@ -167,26 +169,35 @@ The full schedule is to be announced.
 - 07:30 -- 09:00: Breakfast
 - 10:30 -- 11:00: Tea break
 - 12:00 -- 13:30: Lunch
-- 15:15 -- 15:45: Tea break
+- 13:30 -- 15:30: Groups
+- 15:30 -- 16:00: Tea break
+- 16:00 -- 17:00: Talks
 - 18:00 -- 19:30: Dinner
 
 #### Wednesday, March 27, 2019
 
 - 07:30 -- 09:00: Breakfast
+- 09:00 -- 10:30: Talks
 - 10:30 -- 11:00: Tea break
+- 11:00 -- 12:00: Talks
 - 12:00 -- 13:30: Lunch
-- 13:30 -- 20:45: Excursion and dinner (TBC)
+- 13:30 -- 20:45: Excursion and dinner
 
 #### Thursday, March 28, 2019
 
 - 07:30 -- 09:00: Breakfast
+- 09:00 -- 10:30: Talks
 - 10:30 -- 11:00: Tea break
+- 11:00 -- 12:00: Talks
 - 12:00 -- 13:30: Lunch
-- 15:15 -- 15:45: Tea break
+- 15:30 -- 16:00: Tea break
 - 18:00 -- 19:30: Dinner
 
 #### Friday, March 29, 2019
 
 - 07:30 -- 09:00: Checkout and breakfast
+- 09:00 -- 10:30: Talks
 - 10:30 -- 11:00: Tea break
+- 11:00 -- 12:00: Talks
 - 12:00 -- 13:30: Lunch
+- 13:30:          The End
