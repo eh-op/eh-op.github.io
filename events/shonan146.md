@@ -114,7 +114,6 @@ that there will be an abundance of interest in attending this meeting.
 ### Participants
 
 - [Danel Ahman](https://danelahman.github.io/), University of Ljubljana, Slovenia
-- [Nada Amin](http://namin.org/), University of Cambridge, UK
 - [Robert Atkey](https://bentnib.org/), University of Strathclyde, UK
 - [Oliver Bračevac](https://www.stg.tu-darmstadt.de/staff/oliver_bracevac_menu/oliver_bracevac.en.jsp), TU Darmstadt, Germany
 - [Edwin Brady](https://edwinb.wordpress.com/), University of St Andrews, UK
