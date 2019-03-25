@@ -156,9 +156,9 @@ The full schedule is to be announced.
 - 09:00 -- 09:15: Welcome, Overview, Administrative issues
 - 09:15 -- 10:30: Self-introductions
 - 10:30 -- 11:00: Tea break
-- 11:00 -- 11:50: Self-introductions
+- 11:00 -- 11:20: Self-introductions
+- 11:20 -- 12:00: Daan Leijen: Tutorial on typed algebraic effects
 - 12:00 -- 13:30: Lunch
-
 - 15:15 -- 15:45: Tea break
 - 18:00 -- 19:30: Dinner
 
