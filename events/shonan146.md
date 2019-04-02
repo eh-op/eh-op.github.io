@@ -215,3 +215,4 @@ The (dynamically changing) full schedule is [here](https://docs.google.com/sprea
 - "Comodels as a Gateway for Interacting with the External World" by Danel Ahman, [slides](../static/shonan146/shonan19-comodels.pdf)  
 - "Asymptotic Improvement through Delimited Control" by Daniel Hillerström, [slides](../static/shonan146/asymptotic_improvement.pdf)
 - Breaking Links by Daniel Hillerström, Sam Lindley, and Leo White, [program](../static/shonan146/breaking.links)
+- "One Monad to the Tune of Another" by Robert Atkey, [slides](../static/shonan146/one_monad_to_the_tune_of_another.pdf)
