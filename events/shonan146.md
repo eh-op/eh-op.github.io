@@ -204,7 +204,7 @@ The (dynamically changing) full schedule is [here](https://docs.google.com/sprea
 
 ### Talks
 
-- "Lecture: Algebraic Effects" and "Lecture: Effect Handlers" by Gordon Plotkin, slides: [lecture 1](../static/shonan146/lecture_1_alg_effects_I.pdf), [lecture 2](../static/shonan146/lecture_2_types_and_effects.pdf), [lecture 3](../static/shonan146/lecture_3_alg_effects_II.pdf), [lecture 4](../static/lecture_4_effect_handlers.pdf)  
+- "Lecture: Algebraic Effects" and "Lecture: Effect Handlers" by Gordon Plotkin, slides: [lecture 1](../static/shonan146/lecture_1_alg_effects_I.pdf), [lecture 2](../static/shonan146/lecture_2_types_and_effects.pdf), [lecture 3](../static/shonan146/lecture_3_alg_effects_II.pdf), [lecture 4](../static/shonan146/lecture_4_effect_handlers.pdf)  
 - "Just Do It" by Jeremy Gibbons, [slides](../static/shonan146/just_do_it.pdf)  
 - "Implementing Local State with Global State" by Tom Schrijvers, [slides](../static/shonan146/shonan_146_tom_schrijvers.pdf)  
 - "Equational Theories and Monads from Polynomial Cayley Representations" by Maciej Pirog, [slides](../static/shonan146/equational_theories_and_monads_from_polynomial_cayley_representations.pdf)
