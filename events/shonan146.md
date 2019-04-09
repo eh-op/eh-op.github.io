@@ -214,7 +214,7 @@ The (dynamically changing) full schedule is [here](https://docs.google.com/sprea
 - "Cooking Concurrency for Algebraic Effects" by Mauro Jaskelioff, [slides](../static/shonan146/Concurrent_Operations_Shonan_2019.pdf)
 - "Ambient Parameters" by Daan Leijen, [slides](../static/shonan146/shonan-ambient.html)
 - "One Monad to the Tune of Another" by Robert Atkey, [slides](../static/shonan146/one_monad_to_the_tune_of_another.pdf)
-- "Equational Theories and Monads from Polynomial Cayley Representations" by Maciej Pirog, [slides](../static/shonan146/equational_theories_and_monads_from_polynomial_cayley_representations.pdf)
+- "Equational Theories and Monads from Polynomial Cayley Representations" by Maciej Piróg, [slides](../static/shonan146/equational_theories_and_monads_from_polynomial_cayley_representations.pdf)
 - "Handling Polymorphic Algebraic Effects" by Atsushi Igarashi, [slides](../static/shonan146/handling_polymorphic_effects.pdf)
 - "Comodels as a Gateway for Interacting with the External World" by Danel Ahman, [slides](../static/shonan146/shonan19-comodels.pdf)
 - "Asymptotic Improvement through Delimited Control" by Daniel Hillerström, [slides](../static/shonan146/asymptotic_improvement.pdf)
