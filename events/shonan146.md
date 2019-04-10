@@ -219,4 +219,4 @@ The (dynamically changing) full schedule is [here](https://docs.google.com/sprea
 - "Handling Polymorphic Algebraic Effects" by Atsushi Igarashi ([slides](../static/shonan146/handling_polymorphic_effects.pdf))
 - "Comodels as a Gateway for Interacting with the External World" by Danel Ahman ([slides](../static/shonan146/shonan19-comodels.pdf))
 - "Asymptotic Improvement through Delimited Control" by Daniel Hillerström ([slides](../static/shonan146/asymptotic_improvement.pdf))
-- Breaking Links by Daniel Hillerström, Sam Lindley, and Leo White ([program](../static/shonan146/breaking.links))
+- "Breaking Links" by Daniel Hillerström, Sam Lindley, and Leo White ([code](../static/shonan146/breaking.links))
