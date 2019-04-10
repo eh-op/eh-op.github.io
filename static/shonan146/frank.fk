@@ -1,0 +1,323 @@
+-- Shonan Meeting 2019
+-- Craig McLaughlin
+
+data Maybe X = nothing | just X
+data Pair X Y = pair X Y
+
+map : {{X -> Y} -> List X -> List Y}
+map f []        = []
+map f (x :: xs) = f x :: map f xs
+
+append : {List X -> List X -> List X}
+append []        ys = ys
+append (x :: xs) ys = x :: (append xs ys)
+
+-- Exception handler
+catch : {<Abort>X -> {X} -> X}
+catch x            _ = x
+catch <abort -> _> h = h!
+
+
+{---Demo---#1: Multihandler pipe --}
+interface Abort = abort X : X
+interface Write X = tell : X -> Unit
+interface Read X = ask : X
+
+writeList : List X -> [Write X]Unit
+writeList xs = map tell xs; unit
+
+-- Read and concatenate a nil-terminated list of lists
+catter : {[Read (List X)]List X}
+catter! = case ask! { []  -> []
+                    | xs  -> append xs catter!}
+
+
+pipe : {<Write X>Unit -> <Read X>Y -> [Abort]Y}
+
+pipe <tell x -> w> <ask -> r> = pipe (w unit) (r x)
+
+pipe     <_>            y     = y
+
+pipe     unit     <ask -> r>  = abort!
+
+doBeDoBeDoNil : {List String}
+doBeDoBeDoNil! = ["do", "be", "do", "be", "do", ""]
+
+t1 : {[Abort]String}
+t1! = pipe (writeList doBeDoBeDoNil!) catter!
+
+
+
+
+
+
+
+
+
+{---Demo---#2: Effect Pollution --}
+interface Tick = tick : Unit
+
+execTicks : Int -> <Tick>X -> Int
+execTicks n <tick -> k> = execTicks (n + 1) (k unit)
+execTicks n x = n
+
+runTicks : Int -> <Tick>X -> Pair X Int
+runTicks    n     <tick -> k> = runTicks (n + 1) (k unit)
+runTicks    n         x       = pair x n
+
+pTick : {X -> Int -> Y} -> Int -> <Tick>X -> Y
+pTick          f            n     <tick -> k> = pTick f (n + 1) (k unit)
+pTick          f            n           x     = f x n
+
+f' : {{Bool -> Bool} -> Bool}
+f' g = g (g true)
+
+fCnt : {Bool -> [Tick]Bool} -> Int
+fCnt g = execTicks 0 (f' {x -> tick!; g x})
+
+t2 : {Pair Int Int}
+t2! = runTicks 0 (fCnt {x -> tick!; x})
+
+
+
+
+
+
+
+
+
+
+
+
+
+{---Demo---#3: Adapting Effects --}
+fCnt' : {Bool -> Bool} -> Int
+fCnt' g = execTicks 0 (f' {x -> tick!; <Tick> (g x)})
+
+
+t3 : {Pair Int Int}
+t3! = runTicks 0 (fCnt' {x -> tick!; x})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{---Demo---#5--: Leaky Pipe --}
+maybe : <Abort>X    -> Maybe X
+maybe      x         = just x
+maybe  <abort -> _>  = nothing
+
+leaky : <Write X,Abort>Unit  ->  <Read X,Abort>Y  -> Maybe Y
+leaky          <s>               <r>     = maybe (pipe s! r!)
+
+t4 : {[Abort]Maybe String}
+t4! = catch (leaky (tell "drip"; abort!) ask!) {just "aborted"}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{---Demo---#5--: Sealed Pipe --}
+sealed : <Write X>Unit  ->  <Read X>Y  -> Maybe Y
+sealed          <s>               <r>     =
+  maybe (pipe (<Abort> s!) (<Abort> r!))
+
+t5 : {[Abort]Maybe String}
+t5! = catch (sealed (tell "drip"; abort!) ask!) {just "aborted"}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{---Demo---#6.1: Swapping and Duplication of Effects --}
+data Nat = zero | suc Nat
+
+if : {Bool -> {X} -> {X} -> X}
+if true  t f = t!
+if false t f = f!
+
+pNat : String -> [Abort]Nat
+pNat [] = zero
+pNat (x :: []) = if (eqc x 'z') {zero} {abort!}
+pNat (x :: xs) = if (eqc x 's') {suc (pNat xs)} {abort!}
+
+pred : Nat -> [Abort]Nat
+pred zero = abort!
+pred (suc n) = n
+
+conflate : String -> [Abort]Nat
+conflate s = pred (pNat s)
+
+{---
+  Consider the following:
+
+       maybe (conflate "abc")  ===> nothing
+
+       maybe (conflate "sssz") ===> just (suc (suc zero))
+
+       maybe (conflate "z")    ===> nothing
+
+--}
+
+
+
+
+
+
+
+{---Demo---#6.2: Swapping and Duplication of Effects --}
+
+
+distinct : {String -> [Abort,Abort]Nat}
+distinct s = pred (<Abort> (pNat s))
+
+{---
+  Consider the following:
+
+       maybe (catch (distinct "abc") {zero})  ===> nothing
+
+       maybe (catch (distinct "sssz") {zero}) ===> just (suc (suc zero))
+
+       maybe (catch (distinct "z") {zero})    ===> just zero
+
+--}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{---Demo---#6.3: Swapping and Duplication of Effects --}
+
+conflate2 : String -> [Abort]Nat
+conflate2 s = <Abort(s x -> s x x)> (distinct s)
+
+{---
+  Consider the following:
+
+       maybe (conflate2 "abc")  ===> nothing
+
+       maybe (conflate2 "sssz") ===> just (suc (suc zero))
+
+       maybe (conflate2 "z")    ===> nothing
+
+--}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{---Demo---#6.4: Swapping and Duplication of Effects --}
+
+distinctSwp : String -> [Abort,Abort]Nat
+distinctSwp s = <Abort(s x y -> s y x)> (distinct s)
+
+{---
+  Consider the following:
+
+       maybe (catch (distinctSwp "abc") {zero})  ===> just zero
+
+       maybe (catch (distinctSwp "sssz") {zero}) ===> just (suc (suc zero))
+
+       maybe (catch (distinctSwp "z") {zero})    ===> nothing
+
+--}
