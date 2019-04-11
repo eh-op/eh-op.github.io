@@ -213,6 +213,7 @@ The (dynamically changing) full schedule is [here](https://docs.google.com/sprea
 - "Effect Handlers for a Low-level Stack Machine" by Andreas Rossberg ([slides](../static/shonan146/shonan-wasm2019.pdf))
 - "Cooking Concurrency for Algebraic Effects" by Mauro Jaskelioff ([slides](../static/shonan146/Concurrent_Operations_Shonan_2019.pdf))
 - "Ambient Parameters" by Daan Leijen ([slides](../static/shonan146/shonan-ambient.html))
+- "The Scope of Algebraic Effects" by Nicolas Wu ([slides](../static/shonan146/scope.pdf))
 - "One Monad to the Tune of Another" by Robert Atkey ([slides](../static/shonan146/one_monad_to_the_tune_of_another.pdf))
 - "Talking to Frank" by Craig McLaughlin ([slides](../static/shonan146/frank.pdf), [code](../static/shonan146/frank.fk))
 - "Equational Theories and Monads from Polynomial Cayley Representations" by Maciej Piróg ([slides](../static/shonan146/equational_theories_and_monads_from_polynomial_cayley_representations.pdf))
