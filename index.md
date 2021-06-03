@@ -3,6 +3,6 @@ layout: default
 title: Effect Handlers
 ---
 
-## Check back later
+# Check back later
 
 Under construction...
