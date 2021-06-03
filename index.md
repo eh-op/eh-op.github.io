@@ -35,7 +35,7 @@ Project partners
 * <a href="https://bentnib.org/">Robert Atkey</a> (Strathclyde)
 * <a href="https://nickbenton.name/">Nick Benton</a> (Facebook)
 * <a href="https://www.microsoft.com/en-us/research/people/daan/">Daan Leijen</a> (Microsoft)
-* Andrew Kennedy (Facebook)
+* <a href="https://web.archive.org/web/20150926114227/http://research.microsoft.com/en-us/um/people/akenn/">Andrew Kennedy</a> (Facebook)
 * <a href="https://www.c2d3.cam.ac.uk/directory/521/dr-anil-madhavapeddy">Anil Madhavapeddy</a> (Cambridge)
 * <a href="https://personal.cis.strath.ac.uk/conor.mcbride/">Conor McBride</a> (Strathclyde)
 * <a href="https://matija.pretnar.info/">Matija Pretnar</a> (Ljubljana)
