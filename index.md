@@ -23,6 +23,30 @@ and Implementation at The University of Edinburgh and is funded by a
 Fellowship](https://www.ukri.org/our-work/developing-people-and-skills/future-leaders-fellowships/)
 (MR/T043830/1) between February 2021 and January 2025.
 
+### Post-doctoral research position
+
+EHOP has an opening for a 3-year post-doctoral research
+position. Candidates should have a background in programming languages
+with experience of functional programming, formal semantics, and type
+theory. Some experience with effect handlers and algebraic effects is
+desirable, but not essential. The role will involve theory
+(e.g. developing and reasoning about novel effect type systems and
+algebraic theories) and practice (e.g. designing, implementing, and
+evaluating implementations and applications of effect handlers), and
+ample opportunity to engage with our project partners.
+
+Job application details are
+[here](https://elxw.fa.em3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/2087/).
+
+If you are interested in applying then please contact
+[Sam Lindley](mailto:Sam.Lindley@ed.ac.uk).
+
+### PhD positions
+
+If you are interested in doing a PhD relating to Effect Handler
+Oriented Programming then please contact [Sam
+Lindley](mailto:Sam.Lindley@ed.ac.uk).
+
 ### People
 
 Core team
