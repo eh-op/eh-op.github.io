@@ -1,0 +1,167 @@
+/**
+ * Stylesheet for the EHOP website.
+ */
+
+body {
+    padding: 0rem;
+    border: 0;
+    min-width: 25rem;
+    max-width: 50rem;
+    font-family: 'Hahmlet';
+    font-size: 12pt;
+    margin: auto;
+}
+
+main {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+ul {
+    padding-left: 2rem;
+}
+
+li {
+    list-style-type: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #0078b4;
+}
+
+a:active, a:hover {
+    text-decoration: underline;
+}
+
+img.partner {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0.5em;
+    padding-bottom: 0.5rem;
+}
+
+a.anchor, a.anchor:active, a.anchor:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+ul.navbar {
+    text-align: center;
+}
+
+ul.navbar li {
+    display: inline;
+}
+
+ul.navbar li:not(:first-child):before {
+    content: '\ffed';
+    margin-right: 5px;
+}
+
+ul.publication {
+    padding: 0;
+}
+
+ul.publication li {
+    padding: 1px 0;
+}
+
+h1, h2, h3 {
+    font-weight: 800;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    line-height: 1.75em;
+}
+
+div.project-partners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+  /* no particular style */
+}
+
+.authors {
+    font-style: italic;
+    font-family: serif;
+    font-size: 11pt;
+}
+
+.info {
+  font-size: 10pt;
+}
+
+
+@media only screen and (min-width: 700px) {
+  ul.team {
+      list-style-type: none;
+  }
+
+  ul.team {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media only screen and (max-width: 699px) {
+  ul.team {
+      display: block;
+      text-align: center;
+  }
+}
+
+ul.team li {
+    display: inline-block;
+    list-style: none;
+    width: 100%;
+}
+
+.member {
+    display: inline-block;
+    width: 250px;
+    padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 700px) {
+    .member .ghost {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 699px) {
+    .member .ghost {
+        display: none;
+    }
+}
+
+.member .member-photograph {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.member-photograph img {
+    border-radius: 50%;
+    border: 10px solid #ccc;
+    width: 200px;
+    height: 200px;
+}
+
+.member .member-affiliation, .member .member-name {
+    display: block;
+    text-align: center;
+}
+
+.member-affiliation {
+    font-style: italic;
+}
