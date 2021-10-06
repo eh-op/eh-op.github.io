@@ -42,6 +42,7 @@ a.anchor, a.anchor:active, a.anchor:hover {
 /* Navigation bar */
 ul.navbar {
     text-align: center;
+    padding-left: 0;
 }
 
 ul.navbar li {
