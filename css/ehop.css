@@ -3,10 +3,7 @@
  */
 
 body {
-    /* padding: 0rem; */
     border: 0;
-    /* min-width: 25rem; */
-    /* max-width: 50rem; */
     font-family: 'Hahmlet', serif;
     font-size: 12pt;
     margin: 0 auto;
@@ -25,16 +22,6 @@ body {
         width: 100%;
     }
 }
-
-/* ul { */
-/*     padding-left: 2rem; */
-/* } */
-
-/* li { */
-/*     list-style-type: none; */
-/*     padding-top: 0.5rem; */
-/*     padding-bottom: 0.5rem; */
-/* } */
 
 /* Hyperlinks */
 a {
