@@ -178,13 +178,14 @@ ul.grid-3 li {
 }
 
 /* Project partners logos */
-.project-partners li {
-    max-width: 200px;
-}
+/* .project-partners li { */
+/*     max-width: 200px; */
+/* } */
 
-.project-partners li img {
-    width: 70%;
-    height: auto;
+.project-partners img {
+    padding: 1rem;
+    /* width: 70%; */
+    /* height: auto; */
 }
 
 /* Misc: do not display member photographs nor project partners logos
