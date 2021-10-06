@@ -3,24 +3,15 @@
  */
 
 body {
+    margin: auto;
     border: 0;
+    max-width: 750px;
     font-family: 'Hahmlet', serif;
     font-size: 12pt;
-    margin: 0 auto;
-    width:100%;
 }
 
-@media only screen and (min-width: 1000px) {
-    .main {
-        width: 900px;
-        margin: 0 auto;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    .main {
-        width: 100%;
-    }
+.main {
+    margin: 1rem;
 }
 
 /* Hyperlinks */
@@ -116,9 +107,9 @@ ul.publication li {
 
 .member-photograph img {
     border-radius: 50%;
-    border: 10px solid #ccc;
-    width: 200px;
-    height: 200px;
+    border: 7px solid #ccc;
+    width: 150px;
+    height: 150px;
 }
 
 .member .member-affiliation, .member .member-name {
