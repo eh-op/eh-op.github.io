@@ -81,7 +81,7 @@
 
       <h3>Core team</h3>
 
-      <ul class="team">
+      <ul class="grid-3">
         <li>
           <div class="member">
             <div class="member-photograph">
@@ -95,8 +95,8 @@
             </div>
           </div>
         </li>
-        <li>
-          <div class="member ghost">
+        <li class="ghost-3">
+          <div class="member">
             <div class="member-photograph">
             </div>
             <div class="member-name">
@@ -122,7 +122,7 @@
 
       <h3>Project partners</h3>
 
-      <ul class="team">
+      <ul class="grid-3">
         <li>
           <div class="member">
             <div class="member-photograph">
@@ -240,7 +240,16 @@
             </div>
           </div>
         </li>
-        <li></li>
+        <li class="ghost-3">
+          <div class="member">
+            <div class="member-photograph">
+            </div>
+            <div class="member-name">
+            </div>
+            <div class="member-affiliation">
+            </div>
+          </div>
+        </li>
         <li>
           <div class="member">
             <div class="member-photograph">
@@ -254,14 +263,24 @@
             </div>
           </div>
         </li>
+        <li class="ghost-3">
+          <div class="member">
+            <div class="member-photograph">
+            </div>
+            <div class="member-name">
+            </div>
+            <div class="member-affiliation">
+            </div>
+          </div>
+        </li>
       </ul>
 
       <h3>Visiting researcher</h3>
 
-      <ul class="team">
-        <li>
+      <ul class="grid-3">
+        <li class="ghost-3">
           <!-- Ghost member -->
-          <div class="member ghost">
+          <div class="member">
             <div class="member-photograph">
             </div>
             <div class="member-name">
@@ -283,8 +302,8 @@
             </div>
           </div>
         </li>
-        <li>
-          <div class="member ghost">
+        <li class="ghost-2">
+          <div class="member">
             <div class="member-photograph">
             </div>
             <div class="member-name">
@@ -309,7 +328,7 @@
         <!-- </div> -->
 
       <h2><a name="papers" class="anchor">Papers</a></h2>
-      <ul>
+      <ul class="spaced-listing">
         <li>
           <ul class="publication">
             <li class="title"><a href="https://homepages.inf.ed.ac.uk/slindley/papers/handler-calculus-draft-may2021.pdf">Handler calculus</a></li>
@@ -334,13 +353,13 @@
       </ul>
 
       <h2><a name="events" class="anchor">Events</a></h2>
-      <ul>
+      <ul class="spaced-listing">
         <li><a href="https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=21292">Dagstuhl seminar 21922: Scalable Handling of Effects</a></li>
       </ul>
 
       <h2><a name="links" class="anchor">Links</a></h2>
 
-      <ul>
+      <ul class="spaced-listing">
         <li><a href="https://github.com/frank-lang/frank">Frank: an effect handler-oriented programming language</a></li>
         <li><a href="http://www.links-lang.org">Links: a functional programming language for the web, including effect handlers</a></li>
         <li><a href="https://github.com/effect-handlers/wasm-spec">WasmFX: an extension of Wasm with effect handlers</a></li>
@@ -351,23 +370,33 @@
 
       <h2><a name="project-partners" class="anchor">Project partners</a></h2>
 
-      <div class="project-partners">
-        <img class="partner" alt="University of Cambridge" title="Cambridge" src="images/cambridge.svg" width="40%" />
-        <img class="partner" alt="DFINITY Foundation" title="DFINITY" src="images/dfinity.svg" width="20%" />
-        <img class="partner" alt="Facebook" title="Facebook" src="images/facebook.svg" width="10%" />
-      </div>
-
-      <div class="project-partners">
-        <img class="partner" alt="IIT Madras" title="IIT Madras" src="images/iit.svg" width="15%" />
-        <!-- <img class="partner" src="images/iowa.png" width="20%" /> -->
-        <img class="partner" alt="Jane Street capital" title="Jane Street" src="images/janestreet.png" width="50%" />
-      </div>
-
-      <div class="project-partners">
-        <img class="partner" alt="Ljubljana University" title="Ljubljana" src="images/ljubljana.jpg" width="20%" />
-        <img class="partner" alt="Microsoft" title="Microsoft" src="images/microsoft.svg" width="40%" />
-        <img class="partner" alt="University of Strathclyde" title="Strathclyde" src="images/strathclyde.png" width="15%" />
-      </div>
+      <ul class="grid-3 project-partners">
+        <li>
+          <img alt="University of Cambridge" title="Cambridge" src="images/cambridge.svg">
+        </li>
+        <li>
+          <img alt="DFINITY Foundation" title="DFINITY" src="images/dfinity.svg">
+        </li>
+        <li>
+          <img alt="Facebook" title="Facebook" src="images/facebook.svg">
+        </li>
+        <li>
+          <img alt="IIT Madras" title="IIT Madras" src="images/iit.svg">
+          <!-- <img class="partner" src="images/iowa.png" width="20%" /> -->
+        </li>
+        <li>
+          <img alt="Jane Street capital" title="Jane Street" src="images/janestreet.png">
+        </li>
+        <li>
+          <img alt="Ljubljana University" title="Ljubljana" src="images/ljubljana.jpg">
+        </li>
+        <li>
+          <img class="partner" alt="Microsoft" title="Microsoft" src="images/microsoft.svg">
+        </li>
+        <li>
+          <img alt="University of Strathclyde" title="Strathclyde" src="images/strathclyde.png">
+        </li>
+      </ul>
     </div>
   </body>
 </html>

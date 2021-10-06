@@ -3,30 +3,40 @@
  */
 
 body {
-    padding: 0rem;
+    /* padding: 0rem; */
     border: 0;
-    min-width: 25rem;
-    max-width: 50rem;
-    font-family: 'Hahmlet';
+    /* min-width: 25rem; */
+    /* max-width: 50rem; */
+    font-family: 'Hahmlet', serif;
     font-size: 12pt;
-    margin: auto;
+    margin: 0 auto;
+    width:100%;
 }
 
-main {
-    margin-left: 1rem;
-    margin-right: 1rem;
+@media only screen and (min-width: 1000px) {
+    .main {
+        width: 900px;
+        margin: 0 auto;
+    }
 }
 
-ul {
-    padding-left: 2rem;
+@media only screen and (max-width: 1000px) {
+    .main {
+        width: 100%;
+    }
 }
 
-li {
-    list-style-type: none;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
+/* ul { */
+/*     padding-left: 2rem; */
+/* } */
 
+/* li { */
+/*     list-style-type: none; */
+/*     padding-top: 0.5rem; */
+/*     padding-bottom: 0.5rem; */
+/* } */
+
+/* Hyperlinks */
 a {
     text-decoration: none;
     color: #0078b4;
@@ -36,18 +46,13 @@ a:active, a:hover {
     text-decoration: underline;
 }
 
-img.partner {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 0.5em;
-    padding-bottom: 0.5rem;
-}
-
+/* Anchors */
 a.anchor, a.anchor:active, a.anchor:hover {
     color: #000;
     text-decoration: none;
 }
 
+/* Navigation bar */
 ul.navbar {
     text-align: center;
 }
@@ -61,14 +66,7 @@ ul.navbar li:not(:first-child):before {
     margin-right: 5px;
 }
 
-ul.publication {
-    padding: 0;
-}
-
-ul.publication li {
-    padding: 1px 0;
-}
-
+/* Headings and paragraphs */
 h1, h2, h3 {
     font-weight: 800;
 }
@@ -81,10 +79,24 @@ p {
     line-height: 1.75em;
 }
 
-div.project-partners {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Spaced listing */
+ul.spaced-listing {
+    list-style-type: none;
+}
+
+ul.spaced-listing li {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+/* Publications */
+ul.publication {
+    padding: 0;
+    list-style-type: none;
+}
+
+ul.publication li {
+    padding: 1px 0;
 }
 
 .title {
@@ -101,47 +113,11 @@ div.project-partners {
   font-size: 10pt;
 }
 
-
-@media only screen and (min-width: 700px) {
-  ul.team {
-      list-style-type: none;
-  }
-
-  ul.team {
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
-}
-
-@media only screen and (max-width: 699px) {
-  ul.team {
-      display: block;
-      text-align: center;
-  }
-}
-
-ul.team li {
-    display: inline-block;
-    list-style: none;
-    width: 100%;
-}
-
+/* Team members */
 .member {
     display: inline-block;
     width: 250px;
     padding-bottom: 20px;
-}
-
-@media only screen and (min-width: 700px) {
-    .member .ghost {
-        display: block;
-    }
-}
-
-@media only screen and (max-width: 699px) {
-    .member .ghost {
-        display: none;
-    }
 }
 
 .member .member-photograph {
@@ -164,4 +140,73 @@ ul.team li {
 
 .member-affiliation {
     font-style: italic;
+}
+
+/* Flexible 3 cell grid */
+ul.grid-3 {
+    text-align: center;
+}
+
+@media only screen and (min-width: 900px) {
+    ul.grid-3 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    ul.grid-3 .ghost-2, ul.grid-3 .ghost-3 {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width:900px) {
+    ul.grid-3 {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    ul.grid-3 .ghost-2 {
+        display: block;
+    }
+
+    ul.grid-3 .ghost-3 {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+    ul.grid-3 {
+        display: block;
+        padding-left: 0;
+        list-style-position: inside;
+    }
+
+    ul.grid-3 .ghost-2, ul.grid-3 .ghost-3 {
+        display: none;
+    }
+}
+
+ul.grid-3 li {
+    display: inline-block;
+}
+
+/* Project partners logos */
+.project-partners li {
+    max-width: 200px;
+}
+
+.project-partners li img {
+    width: 70%;
+    height: auto;
+}
+
+/* Misc: do not display member photographs nor project partners logos
+   on tiny screens. */
+@media only screen and (max-width: 200px) {
+    .project-partners li img {
+        display: none;
+    }
+
+    .member-photograph img {
+        display: none;
+    }
 }
