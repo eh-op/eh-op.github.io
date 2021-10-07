@@ -6,7 +6,7 @@ body {
     margin: auto;
     border: 0;
     max-width: 750px;
-    font-family: 'Hahmlet', serif;
+    font-family: 'Andada Pro', serif;
     font-size: 12pt;
 }
 
@@ -84,7 +84,6 @@ ul.publication li {
 
 .authors {
     font-style: italic;
-    font-family: serif;
     font-size: 11pt;
 }
 
