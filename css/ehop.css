@@ -30,6 +30,12 @@ a.anchor, a.anchor:active, a.anchor:hover {
     text-decoration: none;
 }
 
+/* Hyperlinks with no markup */
+a.nomarkup, a.nomarkup:active, a.nomarkup:hover, a.nomarkup:visited {
+    color: #000;
+    text-decoration: none;
+}
+
 /* Navigation bar */
 ul.navbar {
     text-align: center;
@@ -68,13 +74,13 @@ ul.spaced-listing li {
     padding-bottom: 0.5rem;
 }
 
-/* Publications */
-ul.publication {
+/* Publications & talks */
+ul.publication, ul.talk {
     padding: 0;
     list-style-type: none;
 }
 
-ul.publication li {
+ul.publication li, ul.talk li {
     padding: 1px 0;
 }
 
@@ -89,6 +95,21 @@ ul.publication li {
 
 .info {
   font-size: 10pt;
+}
+
+ul.attachments {
+    display: inline;
+    list-style-type: none;
+    padding-left: 5px;
+}
+
+ul.attachments li {
+    display: inline;
+}
+
+ul.attachments li:not(:first-child):before {
+    content: ' ';
+    margin-right: 5px;
 }
 
 /* Team members */
