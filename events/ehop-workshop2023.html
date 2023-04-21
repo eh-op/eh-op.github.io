@@ -1,14 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="EHOP Workshop 2023">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EHOP Workshop 2023</title>
-</head>
-<body>
-  <h1>EHOP Workshop 2023</h1>
-  This webpage is currently under construction. Please check back again later.
-</body>
-</html>  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="EHOP Workshop 2023">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EHOP Workshop 2023</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/regular.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/solid.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/css/ehop.css">
+    <style type="text/css">
+      /* Google Map instance */
+      .interactive-map {
+          width: 100%;
+          min-height: 450px;
+      }
+
+      /* img { */
+      /*     width: auto; */
+      /*     height: auto; */
+      /*     max-width: 100%; */
+      /*     max-height: 90%; */
+      /* } */
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <ul class="navbar">
+        <li><a href="#travel">Travel information</a></li>
+        <li><a href="#programme">Programme</a></li>
+        <li><a href="#organisers">Organisers</a></li>
+        <li><a href="/">EHOP webpage</a></li>
+      </ul>
+      <h1>EHOP Workshop 2023</h1>
+
+      <img alt="The Burn" title="The Burn" src="/images/theburn.jpg" width="100%">
+
+      <p>
+        The EHOP (effect handler oriented programming) workshop takes
+        place from <b>Thursday July 20 to Saturday July 22, 2023</b> at The
+        Burn. This informal workshop will be centred around the themes
+        of the EHOP project.
+      </p>
+      <p>
+        <a href="https://theburn.co.uk/academic-retreats/">The
+        Burn</a> an idyllic country house in the Scottish highlands
+        situated on the banks of the North Esk river, providing an
+        entry to the
+        spectacular <a href="https://www.visitscotland.com/info/see-do/glen-esk-p2569081">Glen
+        Esk</a>. It serves as a holiday accommodation and as a retreat
+        for academic meetups.
+      </p>
+
+      <h2><a name="travel" class="anchor">Travel information</a></h2>
+      <p>
+        <ul>
+          <li>Where: The Burn, Glenesk, Brechin DD9 7YP, UK</li>
+          <li>Arrival: 17:00 Thursday July 20, 2023</li>
+          <li>Departure: 16:00 Saturday July 22, 2023</li>
+        </ul>
+      </p>
+      <p>
+        We will arrange taxis for workshop attendees from the Montrose
+        train station to The Burn (about 25 mins). Montrose can be
+        reached by train from Edinburgh in about 1h 50 min, with
+        trains running every hour. Edinburgh can be reached from
+        London Kings Cross by train in approximately 4h 30 min, with
+        trains running every half an hour.
+      </p>
+      <p>
+        <div class="interactive-map" id="map-area" class="map">
+          <!-- Spinner; only supposed to be displayed whilst the
+               Google Map iframe is loading. -->
+          <div class="d-flex justify-content-center" id="map-loader">
+            <div class="spinner-border" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+          <!-- Embedded Google Map; uses JavaScript to render
+               iframe once its contents have been loaded. -->
+          <iframe id="map-instance" class="interactive-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4365.383219545422!2d-2.6653235455781186!3d56.83407991339434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488683c646d058a7%3A0xc3afca561fcae25a!2sThe%20Burn!5e0!3m2!1sen!2sch!4v1682072152159!5m2!1sen!2sch" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" style="display: none;" onload="displayWhenReady('map-instance', 'map-loader');"></iframe>
+          <!-- Notice to noscripters -->
+          <noscript>
+            Enable JavaScript to view the interactive map
+          </noscript>
+        </div>
+      </p>
+
+      <h2><a name="programme" class="anchor">Programme</a></h2>
+      <p>TBA. We will solicit talk proposals from attendees in advance of the workshop.</p>
+
+      <h2><a name="organisers" class="anchor">Organisers</a></h2>
+      <p>
+        The EHOP workshop is organised by
+        <a href="https://users.ox.ac.uk/~scro3229/">Cristina
+          Matache</a>,
+        <a href="https://dhil.net">Daniel
+          Hillerstr&ouml;m</a>, and
+        <a href="https://homepages.inf.ed.ac.uk/slindley">Sam
+          Lindley</a>.
+
+        If you have any questions please get in touch via email
+        ({first.lastname}@ed.ac.uk).
+      </p>
+
+      <h2><a name="acknowledgements" class="anchor">Acknowledgements</a></h2>
+      <p>The EHOP workshop 2023 is sponsored by
+      the <a href="https://www.ukri.org/our-work/developing-people-and-skills/future-leaders-fellowships/">UKRI
+      Future Leaders Fellowship</a> (MR/T043830/1) grant.</p>
+    </div>
+    <!-- JavaScript sources -->
+    <script type="text/javascript">
+      // Captures the console of the browser.
+      let browser = window.console;
+
+      /* Lazily loads an embedded instance of Google Maps. */
+      function displayWhenReady(mapId, spinnerId) {
+          // Remove the spinner.
+          let spinner = document.getElementById(spinnerId);
+          if (spinner == void 0) {
+              browser.error("error: cannot locate spinner #" + spinnerId);
+              return;
+          }
+          spinner.remove();
+
+          // Render the iframe.
+          let map = document.getElementById(mapId);
+          if (map == void 0) {
+              browser.error("error: cannot locate map instance #" + mapId);
+              return;
+          }
+          map.style = "display: block;";
+      }
+    </script>
+  </body>
+</html>
