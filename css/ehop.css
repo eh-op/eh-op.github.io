@@ -74,13 +74,13 @@ ul.spaced-listing li {
     padding-bottom: 0.5rem;
 }
 
-/* Publications & talks */
-ul.publication, ul.talk {
+/* Publications, talks, blog posts */
+ul.publication, ul.talk, ul.blog-post {
     padding: 0;
     list-style-type: none;
 }
 
-ul.publication li, ul.talk li {
+ul.publication li, ul.talk li, ul.blog-post li {
     padding: 1px 0;
 }
 
