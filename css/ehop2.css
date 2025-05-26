@@ -1,0 +1,217 @@
+/**
+ * Stylesheet for the EHOP website.
+ */
+
+body {
+    margin: auto;
+    border: 0;
+    max-width: 750px;
+    font-family: 'Andada Pro', serif;
+    font-size: 12pt;
+}
+
+.main {
+    margin: 1rem;
+}
+
+/* Hyperlinks */
+a {
+    text-decoration: none;
+    color: #0078b4;
+}
+
+a:active, a:hover {
+    text-decoration: underline;
+}
+
+/* Anchors */
+a.anchor, a.anchor:active, a.anchor:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Hyperlinks with no markup */
+a.nomarkup, a.nomarkup:active, a.nomarkup:hover, a.nomarkup:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Navigation bar */
+ul.navbar {
+    text-align: center;
+    padding-left: 0;
+}
+
+ul.navbar li {
+    display: inline;
+}
+
+ul.navbar li:not(:first-child):before {
+    content: '\ffed';
+    margin-right: 5px;
+}
+
+/* Headings and paragraphs */
+h1, h2, h3 {
+    font-weight: 800;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    line-height: normal;
+}
+
+/* Spaced listing */
+ul.spaced-listing {
+    list-style-type: none;
+}
+
+ul.spaced-listing li {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+/* Publications, talks, blog posts */
+ul.publication, ul.talk, ul.blog-post {
+    padding: 0;
+    list-style-type: none;
+}
+
+ul.publication li, ul.talk li, ul.blog-post li {
+    padding: 1px 0;
+}
+
+.title {
+  /* no particular style */
+}
+
+.authors {
+    font-style: italic;
+    font-size: 11pt;
+}
+
+.info {
+  font-size: 10pt;
+}
+
+ul.attachments {
+    display: inline;
+    list-style-type: none;
+    padding-left: 5px;
+}
+
+ul.attachments li {
+    display: inline;
+}
+
+ul.attachments li:not(:first-child):before {
+    content: ' ';
+    margin-right: 5px;
+}
+
+/* Team members */
+.member {
+    display: inline-block;
+    width: 120px;
+    padding-bottom: 20px;
+}
+
+.member .member-photograph {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.member-photograph img {
+    border-radius: 50%;
+    border: 3px solid #ccc;
+    width: 90px;
+    height: 90px;
+}
+
+.member .member-affiliation, .member .member-name {
+    display: block;
+    text-align: center;
+}
+
+.member-affiliation {
+    font-style: italic;
+}
+
+/* Flexible 3 cell grid */
+ul.grid-3 {
+    text-align: center;
+}
+
+@media only screen and (min-width: 900px) {
+    ul.grid-3 {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+    }
+
+    ul.grid-3 .ghost-2, ul.grid-3 .ghost-3 {
+        display: block;
+    }
+
+    ul.grid-3 .grid-single {
+        grid-column: span 5;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width:899px) {
+    ul.grid-3 {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    ul.grid-3 .ghost-2 {
+        display: block;
+    }
+
+    ul.grid-3 .ghost-3 {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 599px) {
+    ul.grid-3 {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding-left: 0;
+        list-style-position: inside;
+    }
+
+    ul.grid-3 .ghost-2, ul.grid-3 .ghost-3 {
+        display: none;
+    }
+}
+
+ul.grid-3 li {
+    display: inline-block;
+}
+
+/* Project partners logos */
+/* .project-partners li { */
+/*     max-width: 200px; */
+/* } */
+
+.project-partners img {
+    padding: 1rem;
+    /* width: 70%; */
+    /* height: auto; */
+}
+
+/* Misc: do not display member photographs nor project partners logos
+   on tiny screens. */
+@media only screen and (max-width: 200px) {
+    .project-partners li img {
+        display: none;
+    }
+
+    .member-photograph img {
+        display: none;
+    }
+}

@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="author" content="Daniel Hillerström and Sam Lindley">
+    <meta name="description" content="Effect handler oriented programming (EHOP) is a UKRI Future Leaders Fellowship research project led by Sam Lindley">
+    <meta name="keywords" content="Effect handlers, computational effects, research, phd, postdoc, The University of Edinburgh">
+    <title>EHOP: Effect Handler Oriented Programming</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/regular.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/solid.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/ehop2.css">
+  </head>
+  <body>
+    <div class="main">
+      <ul class="navbar">
+        <li><a href="#people">People</a></li>
+        <li><a href="#papers">Papers</a></li>
+	      <li><a href="#theses">Theses</a></li>
+        <li><a href="#talks">Talks</a></li>
+        <li><a href="#posters">Posters</a></li>
+        <li><a href="#blog-posts">Blog posts</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#project-partners-institutions">Partners</a></li>
+      </ul>
+      <h1>Effect Handler Oriented Programming</h1>
+
+      <img alt="view from effect handlers HQ" title="view from effect handlers HQ" src="images/528-view.jpeg" width="100%">
+
+      <p>
+        Effect handlers allow programmers to define, customise, and compose a
+        range of crucial programming features ranging from concurrency to
+        probability, inside the programming language. EHOP will develop a
+        radical new programming paradigm called Effect Handler Oriented
+        Programming (or EHOP for short). EHOP will empower software developers
+        to build modular interactive software, enabling the development of
+        safe, secure, and reliable applications. As well as developing the
+        theory and practice of effect handler oriented programming, EHOP will
+        add effect handlers to systems as diverse as WebAssembly, the new
+        target language for the web, and Hack, the language in which the
+        Facebook app is written.
+      </p>
+
+      <p>
+        EHOP is led by <a href="https://homepages.inf.ed.ac.uk/~slindley">Sam
+          Lindley</a> at The University of Edinburgh. It was initially funded by a £1.45M
+        <a href="https://www.ukri.org/our-work/developing-people-and-skills/future-leaders-fellowships/">UKRI
+          Future Leaders Fellowship</a> (MR/T043830/1) between
+          February 2021 and January 2025. The fellowship has been
+          renewed (MR/Z000351/1) with another £0.7M of funding between
+          February 2025 and January 2028.
+      </p>
+
+      <h3><a name="phd-positions" class="anchor">PhD positions</a></h3>
+      If you are interested in applying for a PhD relating to EHOP then
+      contact <a href="mailto:Sam.Lindley@ed.ac.uk">Sam Lindley</a>.
+
+      <h2><a name="people" class="anchor">People</a></h2>
+
+      <h3><a name="core-team" class="anchor">Core team</a></h3>
+
+      <ul class="grid-3">
+        <li>
+          <div class="member">
+            <div class="member-photograph">
+              <img src="images/people/sam-cropped.jpg" alt="Sam Lindley">
+            </div>
+            <div class="member-name">
+              <a href="https://homepages.inf.ed.ac.uk/slindley">Sam Lindley</a>
+            </div>
+            <div class="member-affiliation">
+              Principal Investigator
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="member">
+            <div class="member-photograph">
+              <img src="images/people/anton.png" alt="Anton Lorenzen">
+            </div>
+            <div class="member-name">
+               <a href="https://antonlorenzen.de/">Anton Lorenzen</a>
+            </div>
+            <div class="member-affiliation">
+              Researcher
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="member">
+            <div class="member-photograph">
+              <img src="images/people/cristina-cropped.jpg" alt="Cristina Matache">
+            </div>
+            <div class="member-name">
+              <a href="https://users.ox.ac.uk/~scro3229/">Cristina Matache</a>
+            </div>
+            <div class="member-affiliation">
+              Researcher
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="member">
+            <div class="member-photograph">
+              <img src="images/people/wenhao-cropped.jpg" alt="Wenhao Tang">
+            </div>
+            <div class="member-name">
+              <a href="https://thwfhk.github.io/">Wenhao Tang</a>
+            </div>
+            <div class="member-affiliation">
+              Researcher
+            </div>
+          </div>
+        </li>
+        <li class="grid">
+          <div class="member">
+            <div class="member-photograph">
+              <img src="images/people/orpheas-cropped.jpg" alt="Orpheas van Rooij">
+            </div>
+            <div class="member-name">
+              <a href="https://orpheasvanrooij.com/">Orpheas van Rooij</a>
+            </div>
+            <div class="member-affiliation">
+              Researcher
+            </div>
+          </div>
+        </li>
+        <!-- Ghost member -->
+        <!-- <li class="ghost-3"> -->
+        <!--   <div class="member"> -->
+        <!--     <div class="member-photograph"> -->
+        <!--     </div> -->
+        <!--     <div class="member-name"> -->
+        <!--     </div> -->
+        <!--     <div class="member-affiliation"> -->
+        <!--     </div> -->
+        <!--   </div> -->
+        <!-- </li> -->
+      </ul>
+
+      <h3><a name="project-partners" class="anchor">Collaborators</a></h3>
+
+      <ul class="grid-3">
+        <li>
+          <div class="member">
+            <div class="member-photograph">
+              <img src="images/people/bob.jpg" alt="Robert Atkey">
+            </div>
+            <div class="member-name">
+              <a href="https://bentnib.org/">Robert Atkey</a>
+            </div>
+            <div class="member-affiliation">
+              University of Strathclyde
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="member">
+            <div class="member-photograph">
+              <img src="images/people/nick.jpg" alt="Nick Benton">
+            </div>
+            <div class="member-name">
+              <a href="https://nickbenton.name/">Nick Benton</a>
+            </div>
+            <div class="member-affiliation">
+              Facebook
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="member">
+            <div class="member-photograph">
+              <img src="images/people/unknown.png" alt="Arjun Guha">
+            </div>
+            <div class="member-name">
+               <a href="https://www.khoury.northeastern.edu/home/arjunguha/main/home/">Arjun Guha</a>
+            </div>
+            <div class="member-affiliation">
+              Northeastern University
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="member">
+            <div class="member-photograph">
+              <img src="images/people/daniel-cropped.jpg" alt="Daniel Hillerström">
+            </div>
+            <div class="member-name">
+              <a href="https://www.dhil.net/">Daniel Hillerstr&ouml;m</a>
+            </div>
+            <div class="member-affiliation">
+              Category Labs
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="member">
+            <div class="member-photograph">
+              <img src="images/people/daan-cropped.jpg" alt="Daan Leijen">
+            </div>
+            <div class="member-name">
+              <a href="https://www.microsoft.com/en-us/research/people/daan/">Daan Leijen</a>
+            </div>
+            <div class="member-affiliation">
+              Microsoft
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="member">
+            <div class="member-photograph">
+              <img src="images/people/andrew.jpg" alt="Andrew Kennedy">
+            </div>
+            <div class="member-name">
+              <a href="https://web.archive.org/web/20150926114227/http://research.microsoft.com/en-us/um/people/akenn/">Andrew Kennedy</a>
+            </div>
+            <div class="member-affiliation">
+              Facebook
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="member">
+            <div class="member-photograph">
+              <img src="images/people/anil.jpg" alt="Anil Madhavapeddy">
+            </div>
+            <div class="member-name">
+          <a href="https://www.c2d3.cam.ac.uk/directory/521/dr-anil-madhavapeddy">Anil Madhavapeddy</a>
+            </div>
+            <div class="member-affiliation">
+              University of Cambridge
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="member">
+            <div class="member-photograph">
+              <img src="images/people/conor.jpg" alt="Conor McBride">
+            </div>
+            <div class="member-name">
+              <a href="https://personal.cis.strath.ac.uk/conor.mcbride/">Conor McBride</a>
+            </div>
+            <div class="member-affiliation">
+              University of Strathclyde
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="member">
+            <div class="member-photograph">
+              <img src="images/people/unknown.png" alt="Sean Moss">
+            </div>
+            <div class="member-name">
+              <a href="https://seankmoss.bitbucket.io/">Sean Moss</a>
+            </div>
+            <div class="member-affiliation">
+              University of Birmingham
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="member">
+            <div class="member-photograph">
+              <img src="images/people/matija-cropped.jpg" alt="Matija Pretnar">
+            </div>
+            <div class="member-name">
+              <a href="https://matija.pretnar.info/">Matija Pretnar</a>
+            </div>
+            <div class="member-affiliation">
+              University of Ljubljana
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="member">
+            <div class="member-photograph">
+              <img src="images/people/andreas.jpg" alt="Andreas Rossberg">
+            </div>
+            <div class="member-name">
+              <a href="https://people.mpi-sws.org/~rossberg/">Andreas Rossberg</a>
+            </div>
+            <div class="member-affiliation">
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="member">
+            <div class="member-photograph">
+              <img src="images/people/kc.jpg" alt="KC Sivamarakrishnan">
+            </div>
+            <div class="member-name">
+              <a href="https://kcsrk.info/">KC Sivamarakrishnan</a>
+            </div>
+            <div class="member-affiliation">
+              IIT Madras
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="member">
+            <div class="member-photograph">
+              <img src="images/people/unknown.png" alt="Sam Staton">
+            </div>
+            <div class="member-name">
+              <a href="https://www.cs.ox.ac.uk/people/samuel.staton/main.html">Sam Staton</a>
+            </div>
+            <div class="member-affiliation">
+              University of Oxford
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="member">
+            <div class="member-photograph">
+              <img src="images/people/unknown.png" alt="Ben Titzer">
+            </div>
+            <div class="member-name">
+              <a href="https://s3d.cmu.edu/people/core-faculty/titzer-ben.html">Ben Titzer</a>
+            </div>
+            <div class="member-affiliation">
+              Carnegie Mellon University
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="member">
+            <div class="member-photograph">
+              <img src="images/people/leo.jpg" alt="Leo White">
+            </div>
+            <div class="member-name">
+              <a href="https://www.lpw25.net/">Leo White</a>
+            </div>
+            <div class="member-affiliation">
+              Jane Street
+            </div>
+          </div>
+        </li>
+        <li class="grid-single">
+          <div class="member">
+            <div class="member-photograph">
+              <img src="images/people/unknown.png" alt="Nicolas Wu">
+            </div>
+            <div class="member-name">
+              <a href="https://zenzike.com/">Nicolas Wu</a>
+            </div>
+            <div class="member-affiliation">
+              Imperial College London
+            </div>
+          </div>
+        </li>
+        <!-- <li class="ghost-3"> -->
+        <!--   <div class="member"> -->
+        <!--     <div class="member-photograph"> -->
+        <!--     </div> -->
+        <!--     <div class="member-name"> -->
+        <!--     </div> -->
+        <!--     <div class="member-affiliation"> -->
+        <!--     </div> -->
+        <!--   </div> -->
+        <!-- </li> -->
+      </ul>
+
+      <h3><a name="visiting-researchers" class="anchor">Visiting researchers</a></h3>
+
+      <ul class="grid-3">
+        <li>
+          <div class="member">
+            <div class="member-photograph">
+              <img src="images/people/garrett.jpg" alt="J. Garrett Morris">
+            </div>
+            <div class="member-name">
+              <a href="https://homepage.cs.uiowa.edu/~jgmorrs/">J. Garrett Morris</a>
+            </div>
+            <div class="member-affiliation">
+              University of Iowa
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="member">
+            <div class="member-photograph">
+              <img src="images/people/robin.png" alt="Robin Jourde">
+            </div>
+            <div class="member-name">
+              <a href="https://github.com/Orbion-J">Robin Jourde</a>
+            </div>
+            <div class="member-affiliation">
+              ENS de Lyon
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="member">
+            <div class="member-photograph">
+              <img src="images/people/yi.jpg" alt="Yi Zhou">
+            </div>
+            <div class="member-name">
+              <a href="https://github.com/Yi-Zhou-01">Yi Zhou</a>
+            </div>
+            <div class="member-affiliation">
+              The University of Edinburgh
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="member">
+            <div class="member-photograph">
+              <img src="images/people/nachi.jpg" alt="Nachi Valliappan">
+            </div>
+            <div class="member-name">
+              <a href="https://nachivpn.me/">Nachi Valliappan</a>
+            </div>
+            <div class="member-affiliation">
+              Chalmers University of Technology
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="member">
+            <div class="member-photograph">
+              <img src="images/people/unknown.png" alt="Codrin Iftode">
+            </div>
+            <div class="member-name">
+              <a href="https://github.com/codrutiftode">Codrin Iftode</a>
+            </div>
+            <div class="member-affiliation">
+              The University of Edinburgh
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="member">
+            <div class="member-photograph">
+              <img src="images/people/loic-cropped.jpg" alt="Loïc Chevalier">
+            </div>
+            <div class="member-name">
+              <a href="https://github.com/rajdakin">Loïc Chevalier</a>
+            </div>
+            <div class="member-affiliation">
+              ENS Ulm
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="member">
+            <div class="member-photograph">
+              <img src="images/people/elouan-cropped.jpg" alt="Elouan Oger">
+            </div>
+            <div class="member-name">
+              <a href="https://github.com/l1-og">Elouan Oger</a>
+            </div>
+            <div class="member-affiliation">
+              ENS de Lyon
+            </div>
+          </div>
+        </li>
+        <!-- Ghost member -->
+        <!-- <li class="ghost-2"> -->
+        <!--   <div class="member"> -->
+        <!--     <div class="member-photograph"> -->
+        <!--     </div> -->
+        <!--     <div class="member-name"> -->
+        <!--     </div> -->
+        <!--     <div class="member-affiliation"> -->
+        <!--     </div> -->
+        <!--   </div> -->
+        <!-- </li> -->
+      </ul>
+
+      <h3><a name="almuni" class="anchor">Almuni</a></h3>
+      <ul class="grid-3">
+        <!-- Ghost member -->
+        <li class="ghost-2">
+          <div class="member">
+            <div class="member-photograph">
+            </div>
+            <div class="member-name">
+            </div>
+            <div class="member-affiliation">
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="member">
+            <div class="member-photograph">
+              <img src="images/people/frank.jpg" alt="Frank Emrich">
+            </div>
+            <div class="member-name">
+               <a href="https://github.com/frank-emrich">Frank Emrich</a>
+            </div>
+            <div class="member-affiliation">
+              Meta
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="member">
+            <div class="member-photograph">
+              <img src="images/people/jesse.png" alt="Jesse Sigal">
+            </div>
+            <div class="member-name">
+               <a href="https://www.jsigal.com">Jesse Sigal</a>
+            </div>
+            <div class="member-affiliation">
+              The University of Edinburgh
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="member">
+            <div class="member-photograph">
+              <img src="images/people/unknown.png" alt="Wilmer Ricciottil">
+            </div>
+            <div class="member-name">
+               <a href="http://www.wilmer-ricciotti.net/index.shtml">Wilmer Ricciotti</a>
+            </div>
+            <div class="member-affiliation">
+              The University of Edinburgh
+            </div>
+          </div>
+        </li>
+        <!-- Ghost member -->
+        <li class="ghost-2">
+          <div class="member">
+            <div class="member-photograph">
+            </div>
+            <div class="member-name">
+            </div>
+            <div class="member-affiliation">
+            </div>
+          </div>
+        </li>
+      </ul>
+
+
+      <h2><a name="papers" class="anchor">Papers</a></h2>
+      <ul class="spaced-listing">
+        <li>
+          <ul class="publication">
+            <li class="title"><a href="https://arxiv.org/abs/2407.11816">Modal Effect Types</a></li>
+            <li class="authors">Wenhao Tang, Leo White, Stephen Dolan, Daniel Hillerstr&ouml;m, Sam Lindley, and Anton Lorenzen</li>
+            <li class="info">To appear at <a href="https://2025.splashcon.org/track/OOPSLA">OOPSLA 2025</a>.</li>
+          </ul>
+        </li>
+        <li>
+          <ul class="publication">
+            <li class="title"><a href="https://dhil.net/research/papers/wasmfxtime-waw2025.pdf">Continuing Stack Switching in Wasmtime</a></li>
+            <li class="authors">Frank Emrich and Daniel Hillerstr&ouml;m</li>
+            <li class="info">Extended abstract. Presented at <a href="https://popl25.sigplan.org/home/waw-2025">WAW 2025</a>.</li>
+          </ul>
+        </li>
+        <li>
+          <ul class="publication">
+            <li class="title"><a href="static/papers/sss-waw-2025.pdf">Experience report: stack switching in Wasm SpecTec</a></li>
+            <li class="authors">Yalun Liang, Sam Lindley, and Andreas Rossberg</li>
+            <li class="info">Extended abstract. Presented at <a href="https://popl25.sigplan.org/home/waw-2025">WAW 2025</a>.</li>
+          </ul>
+        </li>
+        <li>
+          <ul class="publication">
+            <li class="title">
+              <a href="https://homepages.inf.ed.ac.uk/slindley/papers/libseff.pdf">
+                Effect handlers for C via coroutines
+              </a>
+              <div class="authors">Mario Alvarez-Picallo, Teodoro Freund, Dan R. Ghica, and Sam Lindley</div>
+              <div class="info">In the proceedings of <a href="https://2024.splashcon.org/track/splash-2024-OOPSLA">OOPSLA 2024</a>.</div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="publication">
+            <li class="title">
+              <a href="https://dl.acm.org/doi/10.1145/3674642">
+                Oxidizing OCaml with modal memory management
+              </a>
+              <div class="authors">Anton Lorenzen, Leo White, Stephen Dolan, Richard Eisenberg, and Sam Lindley</div>
+              <div class="info">In the proceedings of <a href="https://icfp24.sigplan.org/">ICFP 2024</a>.</div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="publication">
+            <li class="title">
+              <a href="https://homepages.inf.ed.ac.uk/slindley/papers/asymptotic-speedup-via-effect-handlers.pdf">Asymptotic speedup via effect handlers</a>
+              <div class="authors">Daniel Hillerstr&ouml;m, Sam Lindley, and John Longley</div>
+              <div class="info">In the <a href="https://www.cambridge.org/core/journals/journal-of-functional-programming">Journal of Functional Programming</a>
+                (ICFP 2020 special issue)
+                34:e5, April 2024.</div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="publication">
+            <li class="title">
+              <a href="https://homepages.inf.ed.ac.uk/slindley/papers/spectec.pdf">
+                Bringing the WebAssembly standard up to speed with SpecTec
+              </a>
+            </li>
+            <li class="authors">Dongjun Youn, Wonho Shin, Jaehyun Lee,
+            Sukyoung Ryu, Joachim Breitner, Philippa Gardner, Sam
+            Lindley, Matija Pretnar, Xiaojia Rao, Conrad Watt, and
+            Andreas Rossberg</li>
+            <li class="info">In the proceedings of <a href="https://pldi24.sigplan.org/">PLDI 2024</a>.</li>
+          </ul>
+        </li>
+        <li>
+          <ul class="publication">
+            <li class="title">
+              <a href="https://homepages.inf.ed.ac.uk/slindley/papers/fiptree.pdf">
+                The functional essence of imperative binary search trees
+              </a>
+            </li>
+            <li class="authors">Anton Lorenzen, Daan Leijen, Wouter Swierstra, and Sam Lindley</li>
+            <li class="info">In the proceedings of <a href="https://pldi24.sigplan.org/">PLDI 2024</a>.</li>
+          </ul>
+        </li>
+        <li>
+          <ul class="publication">
+            <li class="title">
+              <a href="https://homepages.inf.ed.ac.uk/slindley/papers/heterogeneous.pdf">
+                Behavioural types for heterogeneous systems
+              </a>
+            </li>
+            <li class="authors">
+              Simon Fowler, Philipp Haller, Roland
+              Kuhn, Sam Lindley, Alceste Scalas, and Vasco
+              T. Vasconcelos
+            </li>
+            <li class="info">In the proceedings of <a href="https://places-workshop.github.io/2024/">PLACES 2024</a>.</li>
+          </ul>
+        </li>
+        <li>
+          <ul class="publication">
+            <li class="title">
+              <a href="https://homepages.inf.ed.ac.uk/slindley/papers/asymptotic-speedup-via-effect-handlers.pdf">
+                Asymptotic speedup via effect handlers
+              </a>
+            </li>
+            <li class="authors">Daniel Hillerstr&ouml;m, Sam Lindley, and John Longley</li>
+            <li class="info">In the <a href="https://www.cambridge.org/core/journals/journal-of-functional-programming">
+                Journal of Functional Programming
+              </a>
+              (ICFP 2020 special issue)
+              34:e5, April 2024.
+            </li>
+          </ul>
+        </li>
+	<li>
+          <ul class="publication">
+            <li class="title">
+              <a href="https://arxiv.org/abs/2402.03103">Scoped effects as parameterized algebraic theories</a>
+            </li>
+            <li class="authors">Sam Lindley, Cristina Matache, Sean Moss, Sam Staton, Nicolas Wu, and Zhixuan Yang</li>
+            <li class="info">In the proceedings of <a href="https://etaps.org/2024/conferences/esop/">ESOP 2024</a>.</li>
+          </ul>
+        </li>
+        <li>
+          <ul class="publication">
+            <li class="title">
+              <a href="https://arxiv.org/abs/2307.09383">Soundly handling linearity</a>
+            </li>
+            <li class="authors">Wenhao Tang, Daniel Hillerstr&ouml;m, Sam Lindley, and J. Garrett Morris</li>
+            <li class="info">In the proceedings of <a href="https://popl24.sigplan.org/">POPL 2024</a>.</li>
+          </ul>
+        </li>
+        <li>
+          <ul class="publication">
+            <li class="title">
+              <a href="https://arxiv.org/abs/2308.08347">Continuing WebAssembly with effect handlers</a>
+            </li>
+            <li class="authors">
+              Luna Phipps-Costin, Andreas Rossberg, Arjun Guha, Daan Leijen, Daniel Hillerstr&ouml;m,
+              KC Sivaramakrishnan, Matija Pretnar, and Sam Lindley
+            </li>
+            <li class="info">In the proceedings of <a href="https://2023.splashcon.org/track/splash-2023-oopsla">OOPSLA 2023</a>.</li>
+          </ul>
+        </li>
+        <li>
+          <ul class="publication">
+            <li class="title">
+              <a href="https://arxiv.org/abs/2304.08267">Structural subtyping as parametric polymorphism</a>
+              </li>
+            <li class="authors">
+              Wenhao Tang, Daniel Hillerstr&ouml;m, James McKinna, Michel Steuwer, Ornela Dardha,
+              Rongxiao Fu, and Sam Lindley
+            </li>
+            <li class="info">In the proceedings of <a href="https://2023.splashcon.org/track/splash-2023-oopsla">OOPSLA 2023</a>.</li>
+          </ul>
+        </li>
+        <li>
+          <ul class="publication">
+            <li class="title">
+              <a href="https://arxiv.org/pdf/2105.08996v4">Separating sessions smoothly</a>
+            </li>
+            <li class="authors">Simon Fowler, Wen Kokke, Ornela Dardha, Sam Lindley, and J. Garrett Morris</li>
+            <li class="info">In <a href="https://lmcs.episciences.org/">LMCS</a>, Volume 19, Issue 3, July 2023</li>
+          </ul>
+        </li>
+        <li>
+          <ul class="publication">
+            <li class="title">
+              <a href="https://homepages.inf.ed.ac.uk/slindley/papers/cppeff.pdf">
+                High-level effect handlers in C++
+              </a>
+            </li>
+            <li class="authors">Dan Ghica, Sam Lindley, Marcos Maroñas Bravo, Maciej Piróg</li>
+            <li class="info">In the proceedings of <a href="https://2022.splashcon.org/track/splash-2022-oopsla">OOPSLA 2022</a>.</li>
+          </ul>
+        </li>
+        <li>
+          <ul class="publication">
+            <li class="title">
+              <a href="https://homepages.inf.ed.ac.uk/slindley/papers/freezeml-constraints.pdf">
+                Constraint-based type inference for FreezeML
+              </a>
+            </li>
+            <li class="authors">Frank Emrich, Jan Stolarek, James Cheney, and Sam Lindley</li>
+            <li class="info">In the proceedings of <a href="https://icfp22.sigplan.org/">ICFP 2022</a>.</li>
+          </ul>
+        </li>
+        <li>
+          <ul class="publication">
+            <li class="title">
+              <a href="https://homepages.inf.ed.ac.uk/slindley/papers/sss.pdf">
+                Separating sessions smoothly
+              </a>
+            </li>
+            <li class="authors">Simon Fowler, Wen Kokke, Ornela Dardha, Sam Lindley, and J. Garrett Morris</li>
+            <li class="info">In the proceedings of <a href="https://qonfest2021.lacl.fr/concur21.php">CONCUR 2021</a>.</li>
+            <li class="info">[<a href="https://arxiv.org/abs/2105.08996">extended version</a>]</li>
+          </ul>
+        </li>
+        <li>
+          <ul class="publication">
+            <li class="title"><a href="https://homepages.inf.ed.ac.uk/slindley/papers/handler-calculus-draft-may2021.pdf">Handler calculus</a></li>
+            <li class="authors">Sam Lindley</li>
+            <li class="info">Extended abstract. Presented at <a href="https://icfp21.sigplan.org/home/hope-2021">HOPE 2021</a>.</li>
+          </ul>
+        </li>
+        <li>
+          <ul class="publication">
+            <li class="title"><a href="https://dhil.net/research/papers/unix-ml2021.pdf">Composing UNIX with effect handlers: A case study in effect handler oriented programming</a></li>
+            <li class="authors">Daniel Hillerstr&ouml;m</li>
+            <li class="info">Extended abstract. Presented at <a href="https://icfp21.sigplan.org/home/mlfamilyworkshop-2021">ML Family Workshop 2021</a>.</li>
+          </ul>
+        </li>
+      </ul>
+
+
+      <h2><a name="theses" class="anchor">Theses</a></h2>
+
+      <ul class="spaced-listing">
+        <li>
+          <ul class="publication">
+            <li class="title"><a href="https://era.ed.ac.uk/handle/1842/41919">Automatic differentiation via effects and handlers</a></li>
+            <li class="authors">Jesse Sigal</li>
+            <li class="info">PhD thesis, School of Informatics, The University of Edinburgh, 2024.</li>
+          </ul>
+        </li>
+        <li>
+          <ul class="publication">
+            <li class="title"><a href="static/theses/carslaw-dissertation-2024.pdf">Implementing UNIX with effect handlers</a></li>
+            <li class="authors">Ramsay Carslaw</li>
+            <li class="info">Undergraduate thesis, School of Informatics, The University of Edinburgh, 2024.</li>
+          </ul>
+        </li>
+        <li>
+          <ul class="publication">
+            <li class="title"><a href="https://era.ed.ac.uk/handle/1842/41418">Complete and easy type inference for first-class polymorphism</a></li>
+            <li class="authors">Frank Emrich</li>
+            <li class="info">PhD thesis, School of Informatics, The University of Edinburgh, 2023.</li>
+          </ul>
+        </li>
+	<li>
+          <ul class="publication">
+            <li class="title"><a href="https://ora.ox.ac.uk/objects/uuid:bef49bbc-7990-484a-b2d3-f9da31a58d4c">Concrete sheaf models of higher-order recursion</a></li>
+            <li class="authors">Cristina Matache</li>
+            <li class="info">PhD thesis, Department of Computer Science, University of Oxford, 2023.</li>
+          </ul>
+        </li>
+        <li>
+          <ul class="publication">
+            <li class="title"><a href="https://github.com/dhil/phd-dissertation">Foundations for programming and implementing effect handlers</a></li>
+            <li class="authors">Daniel Hillerstr&ouml;m</li>
+            <li class="info">PhD thesis, School of Informatics, The University of Edinburgh, 2021.</li>
+          </ul>
+        </li>
+      </ul>
+
+
+      <h2><a name="talks" class="anchor">Talks</a></h2>
+      <ul class="spaced-listing">
+        <li>
+          <ul class="talk">
+            <li class="title">Effect handler oriented programming</li>
+            <li class="authors">Sam Lindley</li>
+            <li class="info">Huawei-Edinburgh Joint Lab Workshop, Xi'an, April 2025
+              <ul class="attachments">
+                <li><a href="talks/ehop-huawei2025.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="talk">
+            <li class="title">Modal effect types</li>
+            <li class="authors">Sam Lindley</li>
+            <li class="info">FATA Seminar, Glasgow, March 2025
+              <ul class="attachments">
+                <li><a href="talks/met-glasgow-2025.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="talk">
+            <li class="title">Stack switching for Wasm</li>
+            <li class="authors">Sam Lindley</li>
+            <li class="info"><a href="https://github.com/WebAssembly/meetings/blob/main/main/2025/CG-02.md">WebAssembly CG Meeting</a>, San Francisco, February 2025
+              <ul class="attachments">
+                <li><a href="talks/stack-switching-wasmcg-feb2025.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="talk">
+            <li class="title">Categorical logical relations for effects and handlers</li>
+            <li class="authors">Jesse Sigal</li>
+            <li class="info"><a href="https://sites.google.com/view/catniporg/home"> CATNIP 6</a>, February 2025
+              <ul class="attachments">
+                <li><a href="talks/catnip-6.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="talk">
+            <li class="title">Continuing Stack Switching in Wasmtime</li>
+            <li class="authors">Frank Emrich, Daniel Hillerstr&ouml;m</li>
+            <li class="info"><a href="https://popl25.sigplan.org/home/waw-2025"> WAW 2025</a>, January 2025
+              <ul class="attachments">
+                <li><a href="talks/wasmfx-waw2025.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="talk">
+            <li class="title">Modal effect types</li>
+            <li class="authors">Sam Lindley</li>
+            <li class="info"><a href="https://wiki.hh.se/wg211/index.php/WG211/M24Schedule">IFIP WG2.11 Meeting #24</a>, Edinburgh, December 2024
+              <ul class="attachments">
+                <li><a href="talks/met-wg211-edinburgh-2024.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+            <li class="info"><a href="https://ifipwg21wiki.cs.kuleuven.be/wiki/index.php/Canberra2024">IFIP WG2.1 Meeting #82</a>, Canberra, November 2024
+              <ul class="attachments">
+                <li><a href="talks/met-wg21-canberra-2024.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="talk">
+            <li class="title">Effect handler oriented programming</li>
+            <li class="authors">Sam Lindley</li>
+            <li class="info">Nanyang Technical University Singapore, November 2024
+              <ul class="attachments">
+                <li><a href="talks/ehop-ntu2024.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="talk">
+            <li class="title">Automatic Differentiation via Effects and Handlers in OCaml</li>
+            <li class="authors">Jesse Sigal</li>
+            <li class="info"><a href="https://icfp24.sigplan.org/home/mlworkshop-2024"> ML Family 2024</a>, September 2024
+              <ul class="attachments">
+                <li><a href="talks/ml-2024-talk.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="talk">
+            <li class="title">Paella: algebraic effects with parameters and their handlers</li>
+            <li class="authors">Jesse Sigal, Ohad Kammar, Cristina Matache, and Conor McBride</li>
+            <li class="info"><a href="https://icfp24.sigplan.org/home/hope-2024"> HOPE 2024</a>, September 2024
+              <ul class="attachments">
+                <li><a href="talks/hope-2024-talk.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="talk">
+            <li class="title">WasmFX stack switching: status and future plans</li>
+            <li class="authors">Frank Emrich</li>
+            <li class="info"><a href="https://github.com/WebAssembly/meetings/blob/main/main/2024/CG-06.md">WebAssembly CG Meeting</a>, CMU, June 2024
+              <ul class="attachments">
+                <li><a href="talks/stack-switching-wasmcg-june2024.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="talk">
+            <li class="title">Executable Universal Composability with Effect Handlers</li>
+            <li class="authors">Markulf Kohlweiss, Sam Lindley, Sabine Oechsner, Jesse Sigal</li>
+            <li class="info">IOG Formal Methods meeting, August 2024
+              <ul class="attachments">
+                <li><a href="talks/protecs-2024/slides.pdf" title="Slides (PDF)" class="nomarkup far fa-file-pdf"></a></li>
+                <li><a href="talks/protecs-2024/slides.pptx" title="Slides (PPTX)" class="nomarkup far fa-file-powerpoint"></a></li>
+                <li><a href="talks/protecs-2024/slides.mp4" title="Slides (MP4)" class="nomarkup far fa-file-video"></a>.</li>
+              </ul>
+            </li>
+            <li class="info"><a href="https://protecs-workshop.gitlab.io/2024/"> ProTeCS 2024</a>, May 2024
+              <ul class="attachments">
+                <li><a href="talks/protecs-2024/slides.pdf" title="Slides (PDF)" class="nomarkup far fa-file-pdf"></a></li>
+                <li><a href="talks/protecs-2024/slides.pptx" title="Slides (PPTX)" class="nomarkup far fa-file-powerpoint"></a></li>
+                <li><a href="talks/protecs-2024/slides.mp4" title="Slides (MP4)" class="nomarkup far fa-file-video"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="talk">
+            <li class="title">Parameterized algebraic theories and applications</li>
+            <li class="authors">Cristina Matache</li>
+            <li class="info">Theoretical Computer Science Seminar, University of Birmingham, March 2024
+              <ul class="attachments">
+                <li><a href="talks/birmingham-talk-march-2024.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+            <li class="info">Huawei-Edinburgh Bayes Coffee House Tech Talk, Edinburgh, March 2024
+              <ul class="attachments">
+                <li><a href="talks/huawei-talk-march-2024.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <ul class="talk">
+            <li class="title">Soundly handling linearity</li>
+            <li class="authors">Wenhao Tang</li>
+            <li class="info"><a href="https://popl24.sigplan.org"> POPL 2024</a>, January 2024
+              <ul class="attachments">
+                <li><a href="talks/control-flow-linearity-popl.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+            <li class="info">University of Bristol, October 2023
+              <ul class="attachments">
+                <li><a href="talks/control-flow-linearity-bristol.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+            <li class="info"><a href="https://effect-handlers.org/events/ehop-workshop2023.html"> EHOP workshop</a>, July 2023
+              <ul class="attachments">
+                <li><a href="talks/control-flow-linearity-ehop.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+	<li>
+          <ul class="talk">
+            <li class="title">An algebraic theory of named threads (work in progress)</li>
+            <li class="authors">Cristina Matache</li>
+	    <li class="info"><a href="https://popl24.sigplan.org/home/galop-2024"> GALOP workshop</a>, January 2024
+              <ul class="attachments">
+                <li><a href="talks/galop-talk.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+	<li>
+          <ul class="talk">
+            <li class="title">Scoped effects as parameterized algebraic theories</li>
+            <li class="authors">Cristina Matache</li>
+	    <li class="info">Invited talk at the <a href="https://site.unibo.it/diapason/en/agenda/directions-and-perspectives-in-the-lambda-calculus"> Directions and Perspectives in the λ-calculus</a> workshop, January 2024
+              <ul class="attachments">
+                <li><a href="talks/Bologna-jan24-cristina.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+            <li class="info">SPLS, November 2023
+              <ul class="attachments">
+                <li><a href="talks/spls-nov23-cristina-1.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="talk">
+            <li class="title">Status update on WasmFX implementation in Wasmtime</li>
+            <li class="authors">Frank Emrich</li>
+            <li class="info"><a href="https://github.com/WebAssembly/stack-switching">WebAssembly Stack Switching Subgroup</a>, December 2023
+              <ul class="attachments">
+                <li><a href="talks/stacks-meeting-12-2023.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <ul class="talk">
+            <li class="title">Structural subtyping as parametric polymorphism</li>
+            <li class="authors">Wenhao Tang</li>
+            <li class="info"><a href="https://2023.splashcon.org/track/splash-2023-oopsla"> OOPSLA 2023</a>, October 2023
+              <ul class="attachments">
+                <li><a href="talks/row-sub-poly.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="talk">
+            <li class="title">Tracking linear continuations for effect handlers</li>
+            <li class="authors">Wenhao Tang</li>
+            <li class="info"><a href="https://www.wiki.ed.ac.uk/display/JL/June+23+workshop+schedule+archive"> Huawei-Edinburgh Joint Lab Workshop</a>, June 2023
+              <ul class="attachments">
+                <li><a href="talks/control-flow-linearity-huawei.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+            <li class="info"><a href="https://spls-series.github.io/meetings/2023/february/"> SPLS</a>, March 2023
+              <ul class="attachments">
+                <li><a href="talks/control-flow-linearity.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="talk">
+            <li class="title">High-level effect handlers in C++</li>
+            <li class="authors">Sam Lindley</li>
+            <li class="info">OOPSLA 2022
+              <ul class="attachments">
+                <li><a href="talks/cpp-effects-oopsla2022.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a></li>
+              </ul>
+            </li>
+            <li class="info"><a href="https://blogs.ed.ac.uk/he-lab/2023/01/05/january-2023-workshop-schedule/">Huawei Edinburgh Joint Lab Workshop</a>, January 2023</li>
+          </ul>
+        </li>
+	<li>
+          <ul class="talk">
+            <li class="title">Asymptotic Speedup via Effect Handlers</li>
+            <li class="authors">Daniel Hillerstr&ouml;m</li>
+            <li class="info"><a href="https://www.gla.ac.uk/schools/computing/research/researchsections/fata-section/#pastevents">FATA seminar</a>, December 2022
+              <ul class="attachments">
+                <li><a href="talks/asympeff_fata2022-12.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="talk">
+            <li class="title">WasmFX: Structured Stack Switching via Effect Handlers in WebAssembly</li>
+            <li class="authors">Daniel Hillerstr&ouml;m</li>
+            <li class="info"><a href="https://www.cs.cmu.edu/~wasm/wasm-research-day-2022.html">Wasm Research Day</a>, October 2022
+              <ul class="attachments">
+                <li><a href="https://dhil.net/research/talks/wasmfx_wrd2022-10.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a></li>
+              </ul>
+            </li>
+            <li class="info"><a href="https://blogs.ed.ac.uk/he-lab/2023/01/05/january-2023-workshop-schedule/">Huawei Edinburgh Joint Lab Workshop</a>, January 2023
+              <ul class="attachments">
+                <a href="talks/wasmfx-huawei23.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="talk">
+            <li class="title">Effect handler oriented programming</li>
+            <li class="authors">Sam Lindley</li>
+            <li class="info">Huawei strategy and technology workshop, September 2022
+              <ul class="attachments">
+                <li><a href="talks/ehop-huawei2022.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+	<li>
+          <ul class="talk">
+            <li class="title">Concrete categories and higher-order recursion (With applications including probability, differentiability, and full abstraction)</li>
+            <li class="authors">Cristina Matache</li>
+            <li class="info">LICS, August 2022
+              <ul class="attachments">
+                <li><a href="talks/lics22-talk.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="talk">
+            <li class="title">Effect handlers for WebAssembly</li>
+            <li class="authors">Sam Lindley</li>
+            <li class="info">Formal Wasm Meeting 2022, Newton Institute, Cambridge
+              <ul class="attachments">
+                <li><a href="talks/wasmfx-mfps2022.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="talk">
+            <li class="title">Effect handler oriented programming</li>
+            <li class="authors">Sam Lindley</li>
+            <li class="info">SPLV 2022
+              <ul class="attachments">
+                <li><a href="talks/ehop-splv2022.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="talk">
+            <li class="title">Effect handlers for WebAssembly</li>
+            <li class="authors">Sam Lindley</li>
+            <li class="info">MFPS 2022 (invited talk)
+              <ul class="attachments">
+                <li><a href="talks/wasmfx-mfps2022.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="talk">
+            <li class="title">Effect handler oriented programming</li>
+            <li class="authors">Sam Lindley</li>
+            <li class="info">OPLSS 2022 (<a href="https://www.cs.uoregon.edu/research/summerschool/summer22/topics.php">summer school course</a>)
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="talk">
+            <li class="title">On the expressive power of types</li>
+            <li class="authors">Sam Lindley</li>
+            <li class="info">TYPES 2022 (invited talk)
+              <ul class="attachments">
+                <li><a href="talks/ept-types2022.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="talk">
+            <li class="title">Composing UNIX with Effect Handlers: An Introduction to Effect Handler Oriented Programming</li>
+            <li class="authors">Daniel Hillerstr&ouml;m</li>
+            <li class="info">Microsoft Research, Redmond, WA, USA, May 26, 2022</li>
+            <li class="info">Huawei Research Centre, Zurich, Switzerland, October 13, 2022.</li>
+          </ul>
+        </li>
+        <li>
+          <ul class="talk">
+            <li class="title">Effect Handler Oriented Programming</li>
+            <li class="authors">Sam Lindley</li>
+            <li class="info">Huawei-Edinburgh Joint Lab, December 10, 2021
+              <ul class="attachments">
+                <li><a href="https://blogs.ed.ac.uk/he-lab/wp-content/uploads/sites/2073/2020/12/ehop.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="talk">
+            <li class="title">Handlers.Js: Compiling Effect Handlers to JavaScript</li>
+            <li class="authors">Daniel Hillerstr&ouml;m</li>
+            <li class="info">Tarides, November 16, 2021
+              <ul class="attachments">
+                <li><a href="https://www.dhil.net/research/talks/handlers.js-tarides21.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="talk">
+            <li class="title">Wasm with typed continuations continued</li>
+            <li class="authors">Sam Lindley</li>
+            <li class="info">Wasm Stacks Subgroup, November 1, 2021
+              <ul class="attachments">
+                <li><a href="https://raw.githubusercontent.com/WebAssembly/meetings/main/stack/2021/presentations/wasmfx.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="talk">
+            <li class="title">WasmFX: Typed Continuations in Wasm</li>
+            <li class="authors">Daniel Hillerstr&ouml;m</li>
+            <li class="info">SPLS October 2021
+              <ul class="attachments">
+                <li><a href="https://www.dhil.net/research/talks/wasmfx-spls21.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="talk">
+            <li class="title">Typed Continuations: A Basis for Stack-switching in Wasm</li>
+            <li class="authors">Daniel Hillerstr&ouml;m</li>
+            <li class="info">Wasm Stacks Subgroup, September 20, 2021
+              <ul class="attachments">
+                <li><a href="https://raw.githubusercontent.com/WebAssembly/meetings/main/stack/2021/presentations/2021-9-20-TypedContinuations.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="talk">
+            <li class="title">Handler Calculus</li>
+            <li class="authors">Sam Lindley</li>
+            <li class="info">Dagstuhl Seminar 21292</li>
+            <li class="info">HOPE 2021
+              <ul class="attachments">
+                <li><a href="https://icfp21.sigplan.org/details/hope-2021-papers/9/Handler-calculus" title="Slides" class="nomarkup far fa-file-alt"></a></li>
+                <li><a href="https://www.youtube.com/watch?v=-OXQkJMU1d4" title="Video recording" class="nomarkup far fa-file-video"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="talk">
+            <li class="title">Composing UNIX with Effect Handlers: A Case Study in Effect Handler Oriented Programming</li>
+            <li class="authors">Daniel Hillerstr&ouml;m</li>
+            <li class="info">Dagstuhl Seminar 21292</li>
+            <li class="info">ML Family Workshop 2021
+              <ul class="attachments">
+                <li><a href="https://www.youtube.com/watch?v=Ye90HCCG-UA" title="Video recording" class="nomarkup far fa-file-video"></a></li>
+                <li><a href="https://www.dhil.net/research/talks/unix-ml21.links" title="Code" class="nomarkup far fa-file-code"></a>.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+
+      <h2><a name="posters" class="anchor">Posters</a></h2>
+
+      <ul class="spaced-listing">
+        <li>
+          <ul class="talk">
+            <li class="title">Session-typed effect handlers (work in progress)</li>
+            <li class="authors">Wenhao Tang</li>
+            <li class="info"><a href="https://popl24.sigplan.org/track/POPL-2024-student-research-competition"> Student Research Competition of POPL 2024</a>, January 2024
+              <ul class="attachments">
+                <li><a href="talks/session-handlers-popl24-src-poster.pdf" title="Slides" class="nomarkup far fa-file-pdf"></a>.</li>
+              </ul>
+            </li>
+            <li class="info"> 3rd place in the graduate category.
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2><a name="blog-posts" class="anchor">Blog posts</a></h2>
+
+      <ul class="spaced-listing">
+        <li>
+          <ul class="blog-post">
+            <li class="title"><a href="https://blog.sigplan.org/2024/08/12/soundly-handling-linearity/">
+              Soundly Handling Linearity </a></li>
+            <li class="authors">Wenhao Tang, Daniel Hillerstr&ouml;m, Sam Lindley, and J. Garrett Morris</li>
+          </ul>
+        </li>
+        <li>
+          <ul class="blog-post">
+            <li class="title"><a href="https://www.jsigal.com/theory/deriving-forward-and-reverse-mode-ad/">
+              Deriving forward and reverse mode AD </a></li>
+            <li class="authors">Jesse Sigal</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2><a name="events" class="anchor">Events</a></h2>
+
+      <ul class="spaced-listing">
+        <li><a href="https://effect-handlers.org/events/ehop-workshop2023.html">EHOP Workshop (July 2023)</a></li>
+        <li><a href="https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=21292">Dagstuhl seminar 21372: Behavioural Types: Bridging Theory and Practice (September 2021)</a></li>
+        <li><a href="https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=21292">Dagstuhl seminar 21292: Scalable Handling of Effects (July 2021)</a></li>
+      </ul>
+
+      <h2><a name="links" class="anchor">Links</a></h2>
+
+      <ul class="spaced-listing">
+        <li><a href="https://github.com/frank-lang/frank">Frank: an effect handler-oriented programming language</a></li>
+        <li><a href="http://www.links-lang.org">Links: a functional programming language for the web, including effect handlers</a></li>
+        <li><a href="https://wasmfx.dev">WasmFX: an extension of Wasm with effect handlers</a></li>
+        <li><a href="https://github.com/yallop/effects-bibliography">Effects bibliography: a curated collection of papers and other resources related to the theory and practice of computational effects</a></li>
+        <li><a href="https://github.com/effect-handlers/effects-rosetta-stone">Effects rosetta stone: polyglot effect handler examples</a></li>
+        <li><a href="https://github.com/effect-handlers/effect-handlers-bench">Effect handers bench: polyglot effect handler benchmarks</a></li>
+      </ul>
+
+      <h2><a name="project-partners-institutions" class="anchor">Project partners</a></h2>
+
+      <ul class="grid-3 project-partners">
+        <li>
+          <img alt="University of Cambridge" title="Cambridge" src="images/cambridge.svg" style="max-width: 200px;">
+        </li>
+        <li>
+          <img alt="DFINITY Foundation" title="DFINITY" src="images/dfinity.svg" style="max-width: 100px;">
+        </li>
+        <li>
+          <img alt="Facebook" title="Facebook" src="images/facebook.svg" style="max-width: 50px;">
+        </li>
+        <li>
+          <img alt="IIT Madras" title="IIT Madras" src="images/iit.svg" style="max-width: 75px;">
+          <!-- <img class="partner" src="images/iowa.png" width="20%" /> -->
+        </li>
+        <li>
+          <img alt="Jane Street capital" title="Jane Street" src="images/janestreet.png" style="max-width: 250px;">
+        </li>
+        <li>
+          <img alt="Ljubljana University" title="Ljubljana" src="images/ljubljana.jpg" style="max-width: 150px;">
+        </li>
+        <li>
+          <img class="partner" alt="Microsoft" title="Microsoft" src="images/microsoft.svg" style="max-width: 200px;">
+        </li>
+        <li class="ghost-3"></li>
+        <li>
+          <img alt="University of Strathclyde" title="Strathclyde" src="images/strathclyde.png" style="max-width: 100px;">
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
