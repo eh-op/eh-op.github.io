@@ -149,19 +149,15 @@ ul.grid-3 {
 @media only screen and (min-width: 900px) {
     ul.grid-3 {
         display: grid;
-        grid-template-columns: auto auto auto auto auto;
+        grid-template-columns: auto auto auto;
     }
 
     ul.grid-3 .ghost-2, ul.grid-3 .ghost-3 {
         display: block;
     }
-
-    ul.grid-3 .grid-single {
-        grid-column: span 5;
-    }
 }
 
-@media only screen and (min-width: 600px) and (max-width:899px) {
+@media only screen and (min-width: 600px) and (max-width:900px) {
     ul.grid-3 {
         display: grid;
         grid-template-columns: auto auto;
@@ -176,10 +172,9 @@ ul.grid-3 {
     }
 }
 
-@media only screen and (min-width: 200px) and (max-width: 599px) {
+@media only screen and (min-width: 200px) and (max-width: 600px) {
     ul.grid-3 {
-        display: grid;
-        grid-template-columns: auto auto;
+        display: block;
         padding-left: 0;
         list-style-position: inside;
     }
@@ -192,6 +187,60 @@ ul.grid-3 {
 ul.grid-3 li {
     display: inline-block;
 }
+
+
+/* Flexible 5 cell grid */
+ul.grid-5 {
+    text-align: center;
+}
+
+@media only screen and (min-width: 900px) {
+    ul.grid-5 {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+    }
+
+    ul.grid-5 .ghost-2, ul.grid-5 .ghost-3 {
+        display: block;
+    }
+
+    ul.grid-5 .grid-single {
+        grid-column: span 5;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width:899px) {
+    ul.grid-5 {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    ul.grid-5 .ghost-2 {
+        display: block;
+    }
+
+    ul.grid-5 .ghost-3 {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 599px) {
+    ul.grid-5 {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding-left: 0;
+        list-style-position: inside;
+    }
+
+    ul.grid-5 .ghost-2, ul.grid-5 .ghost-3 {
+        display: none;
+    }
+}
+
+ul.grid-5 li {
+    display: inline-block;
+}
+
 
 /* Project partners logos */
 /* .project-partners li { */
