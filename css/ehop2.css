@@ -212,7 +212,7 @@ ul.grid-5 {
 @media only screen and (min-width: 600px) and (max-width:899px) {
     ul.grid-5 {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
     }
 
     ul.grid-5 .ghost-2 {
@@ -227,7 +227,7 @@ ul.grid-5 {
 @media only screen and (min-width: 200px) and (max-width: 599px) {
     ul.grid-5 {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
         padding-left: 0;
         list-style-position: inside;
     }
@@ -246,6 +246,14 @@ ul.grid-5 li {
 /* .project-partners li { */
 /*     max-width: 200px; */
 /* } */
+
+
+.logos img {
+    padding: 1.3rem;
+    vertical-align: middle;
+    height: 45px;
+    width: auto;
+}
 
 .project-partners img {
     padding: 1rem;
