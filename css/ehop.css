@@ -115,7 +115,7 @@ ul.attachments li:not(:first-child):before {
 /* Team members */
 .member {
     display: inline-block;
-    width: 250px;
+    width: 120px;
     padding-bottom: 20px;
 }
 
@@ -127,9 +127,9 @@ ul.attachments li:not(:first-child):before {
 
 .member-photograph img {
     border-radius: 50%;
-    border: 7px solid #ccc;
-    width: 150px;
-    height: 150px;
+    border: 3px solid #ccc;
+    width: 90px;
+    height: 90px;
 }
 
 .member .member-affiliation, .member .member-name {
@@ -188,15 +188,71 @@ ul.grid-3 li {
     display: inline-block;
 }
 
+
+/* Flexible 5 cell grid */
+ul.grid-5 {
+    text-align: center;
+}
+
+@media only screen and (min-width: 900px) {
+    ul.grid-5 {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+    }
+
+    ul.grid-5 .ghost-2, ul.grid-5 .ghost-3 {
+        display: block;
+    }
+
+    ul.grid-5 .grid-single {
+        grid-column: span 5;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width:899px) {
+    ul.grid-5 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    ul.grid-5 .ghost-2 {
+        display: block;
+    }
+
+    ul.grid-5 .ghost-3 {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 599px) {
+    ul.grid-5 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding-left: 0;
+        list-style-position: inside;
+    }
+
+    ul.grid-5 .ghost-2, ul.grid-5 .ghost-3 {
+        display: none;
+    }
+}
+
+ul.grid-5 li {
+    display: inline-block;
+}
+
+
 /* Project partners logos */
 /* .project-partners li { */
 /*     max-width: 200px; */
 /* } */
 
+
 .project-partners img {
-    padding: 1rem;
-    /* width: 70%; */
-    /* height: auto; */
+    padding: 1.3rem;
+    vertical-align: middle;
+    height: 45px;
+    width: auto;
 }
 
 /* Misc: do not display member photographs nor project partners logos
