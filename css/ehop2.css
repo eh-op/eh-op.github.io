@@ -248,17 +248,11 @@ ul.grid-5 li {
 /* } */
 
 
-.logos img {
+.project-partners img {
     padding: 1.3rem;
     vertical-align: middle;
     height: 45px;
     width: auto;
-}
-
-.project-partners img {
-    padding: 1rem;
-    /* width: 70%; */
-    /* height: auto; */
 }
 
 /* Misc: do not display member photographs nor project partners logos
