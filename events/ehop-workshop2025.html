@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="EHOP Workshop 2025">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EHOP Workshop 2025</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/regular.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/solid.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/css/ehop.css">
+    <style type="text/css">
+      /* Google Map instance */
+      .interactive-map {
+          width: 100%;
+          min-height: 450px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <ul class="navbar">
+        <li><a href="#travel">Travel information</a></li>
+        <li><a href="#programme">Programme</a></li>
+        <li><a href="#attendees">Attendees</a></li>
+        <li><a href="/">EHOP webpage</a></li>
+      </ul>
+      <h1>EHOP Workshop 2025</h1>
+
+
+      <p>
+        The EHOP (effect handler oriented programming) workshop takes
+        place from <b>Sunday August 17 to Wednesday August 20, 2025</b> at <a href="https://newbattleabbey.com/">Newbattle Abbey College</a>, near Edinburgh. This informal workshop will be centred around the themes
+        of the EHOP project.
+      </p>
+
+      <h2><a name="travel" class="anchor">Travel information</a></h2>
+      <p>
+        <ul>
+          <li>Where: Newbattle Abbey, Newbattle Road, Dalkeith, EH22 3LL, UK</li>
+          <li>Arrival: from 16:30 Sunday August 17, 2025</li>
+          <li>Departure: after lunch Wednesday August 20, 2025</li>
+        </ul>
+      </p>
+      <p>
+       Newbattle Abbey College is reachable from Edinburgh by bus or train.
+      </p>
+      <p>
+      </p>
+      <p>
+        <div class="interactive-map" id="map-area" class="map">
+          <!-- Spinner; only supposed to be displayed whilst the
+               Google Map iframe is loading. -->
+          <div class="d-flex justify-content-center" id="map-loader">
+            <div class="spinner-border" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+          <!-- Embedded Google Map; uses JavaScript to render
+               iframe once its contents have been loaded. -->
+<!--          <iframe id="map-instance" class="interactive-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4365.383219545422!2d-2.6653235455781186!3d56.83407991339434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488683c646d058a7%3A0xc3afca561fcae25a!2sThe%20Burn!5e0!3m2!1sen!2sch!4v1682072152159!5m2!1sen!2sch" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" style="display: none;" onload="displayWhenReady('map-instance', 'map-loader');"></iframe> -->
+	  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4475.698046768871!2d-3.069534523184912!3d55.88263348198379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887bea4cb05f7bb%3A0xc7fac05b59e32be4!2sNewbattle%20Abbey%20College!5e0!3m2!1sro!2suk!4v1750346094334!5m2!1sro!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <!-- Notice to noscripters -->
+          <noscript>
+            Enable JavaScript to view the interactive map
+          </noscript>
+        </div>
+      </p>
+
+      <h2><a name="programme" class="anchor">Programme</a></h2>
+      <p>
+        TBD
+      </p>
+
+      <h2><a name="attendees" class="anchor">Attendees</a></h2>
+       <p>
+        TBD
+      </p>
+      <p>
+        The organisers of the EHOP workshop (and also amongst the
+        participants) are
+        <ul>
+          <li>Sam Lindley (The University of Edinburgh, UK)</li>
+          <li>Cristina Matache (The University of Edinburgh, UK)</li>
+        </ul>
+        If you have any questions please contact an organiser via email
+        ({first.lastname}@ed.ac.uk).
+      </p>
+
+      <h2><a name="acknowledgements" class="anchor">Acknowledgements</a></h2>
+      <p>The EHOP workshop 2025 is sponsored by
+      the <a href="https://www.ukri.org/our-work/developing-people-and-skills/future-leaders-fellowships/">UKRI
+      Future Leaders Fellowship</a> (MR/Z000351/1) grant.</p>
+    </div>
+    <!-- JavaScript sources -->
+    <script type="text/javascript">
+      // Captures the console of the browser.
+      let browser = window.console;
+
+      /* Lazily loads an embedded instance of Google Maps. */
+      function displayWhenReady(mapId, spinnerId) {
+          // Remove the spinner.
+          let spinner = document.getElementById(spinnerId);
+          if (spinner == void 0) {
+              browser.error("error: cannot locate spinner #" + spinnerId);
+              return;
+          }
+          spinner.remove();
+
+          // Render the iframe.
+          let map = document.getElementById(mapId);
+          if (map == void 0) {
+              browser.error("error: cannot locate map instance #" + mapId);
+              return;
+          }
+          map.style = "display: block;";
+      }
+    </script>
+  </body>
+</html>
